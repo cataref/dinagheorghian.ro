@@ -50,7 +50,7 @@ export default function ServicesGrid() {
   return (
     <section
       className="relative z-10 px-6 md:px-12 pt-10 pb-16"
-      style={{ background: "linear-gradient(180deg, #4A2555 0%, #5B2D6E 40%, #7A3568 100%)" }}
+      style={{ background: "linear-gradient(180deg, #E8A0B0 0%, #8B3A6B 30%, #5B2D6E 60%, #7A3568 100%)" }}
     >
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {services.map((s, i) => (

@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "linear-gradient(160deg, #1A0A2E 0%, #2D1B4E 20%, #5B2D6E 40%, #8B3A6B 60%, #6B3068 80%, #4A2555 100%)" }}>
+    <section className="relative overflow-hidden" style={{ background: "linear-gradient(160deg, #1A0A2E 0%, #2D1B4E 20%, #5B2D6E 40%, #8B3A6B 55%, #C45A7C 70%, #E8A0B0 85%, #FDF0F4 100%)" }}>
       {/* Ambient orbs */}
       <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(200,80,180,0.15)_0%,transparent_70%)] animate-[pulseGlow_6s_ease-in-out_infinite]" />
       <div className="absolute bottom-[10%] -left-[5%] w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(96,200,168,0.1)_0%,transparent_70%)] animate-[pulseGlow_8s_ease-in-out_2s_infinite]" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center px-6 md:px-12 pt-28 pb-12 gap-10 lg:gap-14">
+      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center px-6 md:px-12 pt-28 pb-6 gap-10 lg:gap-14">
         {/* Text */}
         <div className="flex-1 text-center lg:text-left">
           <motion.p
@@ -20,7 +20,7 @@ export default function HeroSection() {
             className="text-[11.5px] tracking-[3.5px] uppercase font-medium mb-4"
             style={{ color: "#E8A0D0" }}
           >
-            Ghid transforma\u021Bional \u00B7 Coach
+            Ghid transformațional · Coach
           </motion.p>
 
           <motion.h1
@@ -29,7 +29,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="font-serif text-[clamp(34px,4.5vw,52px)] text-white font-normal leading-[1.15]"
           >
-            Reconecteaz\u0103-te
+            Reconectează-te
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-serif text-[clamp(34px,4.5vw,52px)] font-normal leading-[1.15]"
           >
-            <span className="gradient-text">cu tine \u00EEns\u0103\u021Bi</span>
+            <span className="gradient-text">cu tine însăți</span>
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-serif text-[clamp(34px,4.5vw,52px)] text-white font-normal leading-[1.15]"
           >
-            \u0219i transform\u0103-\u021Bi via\u021Ba.
+            și transformă-ți viața.
           </motion.h1>
 
           <motion.p
@@ -55,8 +55,8 @@ export default function HeroSection() {
             className="text-[15px] leading-relaxed max-w-[400px] mx-auto lg:mx-0 mt-5 mb-7 font-light"
             style={{ color: "rgba(255,255,255,0.55)" }}
           >
-            Sesiuni de transformare interioar\u0103, eliberare emo\u021Bional\u0103 \u0219i
-            reconectare cu sinele autentic. Un spa\u021Biu sigur pentru sufletul t\u0103u.
+            Sesiuni de transformare interioară, eliberare emoțională și
+            reconectare cu sinele autentic. Un spațiu sigur pentru sufletul tău.
           </motion.p>
 
           <motion.div
@@ -70,14 +70,14 @@ export default function HeroSection() {
               className="text-white px-8 py-3.5 rounded-full text-sm font-medium hover:-translate-y-0.5 transition-all"
               style={{ background: "linear-gradient(135deg, #E870A0, #C050D0)", boxShadow: "0 6px 24px rgba(200,80,208,0.3)" }}
             >
-              Programeaz\u0103 o sesiune
+              Programează o sesiune
             </Link>
             <Link
               href="/programe"
               className="text-white px-7 py-3.5 rounded-full text-sm hover:bg-white/12 transition-all"
               style={{ border: "1px solid rgba(255,255,255,0.25)", background: "rgba(255,255,255,0.05)", backdropFilter: "blur(8px)" }}
             >
-              Descoper\u0103 programele
+              Descoperă programele
             </Link>
           </motion.div>
         </div>
@@ -118,10 +118,10 @@ export default function HeroSection() {
 
           <div className="absolute bottom-2 -left-8 glass rounded-xl px-4 py-3 z-20 animate-[float_6s_ease-in-out_2s_infinite]">
             <p className="text-[9px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
-              Experien\u021B\u0103
+              Experiență
             </p>
             <p className="text-[12.5px] text-white font-medium">
-              Psihologie \u00B7 Coaching
+              Psihologie · Coaching
             </p>
           </div>
 
