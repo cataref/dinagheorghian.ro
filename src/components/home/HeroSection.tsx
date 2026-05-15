@@ -5,19 +5,19 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "linear-gradient(160deg, #1A0A2E 0%, #2D1B4E 20%, #5B2D6E 40%, #8B3A6B 55%, #C45A7C 70%, #E8A0B0 85%, #FDF0F4 100%)" }}>
+    <section className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #1A0A2E 0%, #2D1B4E 15%, #5B2D6E 35%, #8B3A6B 55%, #9B4070 75%, #7A3568 100%)" }}>
       {/* Ambient orbs */}
       <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(200,80,180,0.15)_0%,transparent_70%)] animate-[pulseGlow_6s_ease-in-out_infinite]" />
       <div className="absolute bottom-[10%] -left-[5%] w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(96,200,168,0.1)_0%,transparent_70%)] animate-[pulseGlow_8s_ease-in-out_2s_infinite]" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center px-6 md:px-12 pt-28 pb-6 gap-10 lg:gap-14">
+      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center px-6 md:px-12 pt-28 pb-10 gap-10 lg:gap-14">
         {/* Text */}
         <div className="flex-1 text-center lg:text-left">
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-[11.5px] tracking-[3.5px] uppercase font-medium mb-4"
+            className="text-[13px] tracking-[3.5px] uppercase font-medium mb-4"
             style={{ color: "#E8A0D0" }}
           >
             Ghid transformațional · Coach
@@ -27,7 +27,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="font-serif text-[clamp(34px,4.5vw,52px)] text-white font-normal leading-[1.15]"
+            className="font-serif text-[clamp(38px,5vw,58px)] text-white font-normal leading-[1.15]"
           >
             Reconectează-te
           </motion.h1>
@@ -35,7 +35,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-serif text-[clamp(34px,4.5vw,52px)] font-normal leading-[1.15]"
+            className="font-serif text-[clamp(38px,5vw,58px)] font-normal leading-[1.15]"
           >
             <span className="gradient-text">cu tine însăți</span>
           </motion.h1>
@@ -43,7 +43,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-serif text-[clamp(34px,4.5vw,52px)] text-white font-normal leading-[1.15]"
+            className="font-serif text-[clamp(38px,5vw,58px)] text-white font-normal leading-[1.15]"
           >
             și transformă-ți viața.
           </motion.h1>
@@ -52,8 +52,8 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
-            className="text-[15px] leading-relaxed max-w-[400px] mx-auto lg:mx-0 mt-5 mb-7 font-light"
-            style={{ color: "rgba(255,255,255,0.55)" }}
+            className="text-[16.5px] leading-relaxed max-w-[440px] mx-auto lg:mx-0 mt-6 mb-8 font-light"
+            style={{ color: "rgba(255,255,255,0.6)" }}
           >
             Sesiuni de transformare interioară, eliberare emoțională și
             reconectare cu sinele autentic. Un spațiu sigur pentru sufletul tău.
@@ -67,14 +67,14 @@ export default function HeroSection() {
           >
             <Link
               href="/contact"
-              className="text-white px-8 py-3.5 rounded-full text-sm font-medium hover:-translate-y-0.5 transition-all"
+              className="text-white px-9 py-4 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all"
               style={{ background: "linear-gradient(135deg, #E870A0, #C050D0)", boxShadow: "0 6px 24px rgba(200,80,208,0.3)" }}
             >
               Programează o sesiune
             </Link>
             <Link
               href="/programe"
-              className="text-white px-7 py-3.5 rounded-full text-sm hover:bg-white/12 transition-all"
+              className="text-white px-8 py-4 rounded-full text-[15px] hover:bg-white/12 transition-all"
               style={{ border: "1px solid rgba(255,255,255,0.25)", background: "rgba(255,255,255,0.05)", backdropFilter: "blur(8px)" }}
             >
               Descoperă programele
@@ -97,17 +97,17 @@ export default function HeroSection() {
                   <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
                 </svg>
               </div>
-              <p className="text-sm text-white font-medium">Dina Gheorghian</p>
-              <p className="text-[11px] mt-1" style={{ color: "rgba(255,255,255,0.4)" }}>Fotografia ta aici</p>
+              <p className="text-[15px] text-white font-medium">Dina Gheorghian</p>
+              <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.4)" }}>Fotografia ta aici</p>
             </div>
           </div>
 
           {/* Floating badges */}
           <div className="absolute -top-2 -right-5 glass rounded-xl px-4 py-3 z-20 animate-[float_6s_ease-in-out_infinite]">
-            <p className="text-[9px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
+            <p className="text-[10px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
               Autoare
             </p>
-            <p className="text-[12.5px] text-white font-medium">De ce eu?</p>
+            <p className="text-[13px] text-white font-medium">De ce eu?</p>
             <div className="flex gap-1.5 mt-1.5">
               <span className="w-[7px] h-[7px] rounded-full bg-[#FFB0C8]" />
               <span className="w-[7px] h-[7px] rounded-full bg-[#80E8C8]" />
@@ -117,10 +117,10 @@ export default function HeroSection() {
           </div>
 
           <div className="absolute bottom-2 -left-8 glass rounded-xl px-4 py-3 z-20 animate-[float_6s_ease-in-out_2s_infinite]">
-            <p className="text-[9px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
+            <p className="text-[10px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
               Experiență
             </p>
-            <p className="text-[12.5px] text-white font-medium">
+            <p className="text-[13px] text-white font-medium">
               Psihologie · Coaching
             </p>
           </div>

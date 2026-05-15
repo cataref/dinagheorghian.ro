@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 const services = [
   {
     title: "Sesiuni 1:1",
-    desc: "Lucru individual profund, adaptat \u021Bie \u0219i procesului t\u0103u interior",
+    desc: "Lucru individual profund, adaptat ție și procesului tău interior",
     href: "/sesiuni",
     barColor: "linear-gradient(90deg, #E870A0, #FFB0C8)",
     iconBg: "linear-gradient(135deg, #E870A0, #D4507C)",
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Programe de grup",
-    desc: "Transformare structurat\u0103 pe etape, cu suport \u0219i comunitate",
+    desc: "Transformare structurată pe etape, cu suport și comunitate",
     href: "/programe",
     barColor: "linear-gradient(90deg, #60C8A8, #80F0D0)",
     iconBg: "linear-gradient(135deg, #50B898, #38A080)",
@@ -26,7 +26,7 @@ const services = [
   },
   {
     title: "Retreaturi",
-    desc: "Experien\u021Be imersive de reconectare interioar\u0103 \u00een natur\u0103",
+    desc: "Experiențe imersive de reconectare interioară în natură",
     href: "/retreaturi",
     barColor: "linear-gradient(90deg, #C090F0, #E0C8FF)",
     iconBg: "linear-gradient(135deg, #A080D8, #8060C0)",
@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "Cartea",
-    desc: "De ce eu? \u2014 un ghid sincer pentru sufletul t\u0103u",
+    desc: "De ce eu? \u2014 un ghid sincer pentru sufletul tău",
     href: "/cartea",
     barColor: "linear-gradient(90deg, #F0C840, #F8E080)",
     iconBg: "linear-gradient(135deg, #E8B830, #D0A020)",
@@ -49,32 +49,38 @@ const services = [
 export default function ServicesGrid() {
   return (
     <section
-      className="relative z-10 px-6 md:px-12 pt-10 pb-16"
-      style={{ background: "linear-gradient(180deg, #E8A0B0 0%, #8B3A6B 30%, #5B2D6E 60%, #7A3568 100%)" }}
+      className="relative z-10 px-6 md:px-12 pt-8 pb-20"
+      style={{ background: "linear-gradient(180deg, #7A3568 0%, #5B2D6E 50%, #4A2258 100%)" }}
     >
-      <div className="max-w-[1100px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {services.map((s, i) => (
           <Reveal key={s.title} delay={i * 0.1}>
             <Link
               href={s.href}
-              className="block glass rounded-2xl p-6 relative overflow-hidden hover:-translate-y-1 transition-all group"
+              className="block rounded-2xl p-7 relative overflow-hidden hover:-translate-y-1 transition-all group"
+              style={{
+                background: "rgba(255,255,255,0.1)",
+                backdropFilter: "blur(12px)",
+                border: "1px solid rgba(255,255,255,0.15)",
+                minHeight: "200px",
+              }}
             >
               <div
-                className="absolute top-0 left-0 right-0 h-[3px]"
+                className="absolute top-0 left-0 right-0 h-[4px]"
                 style={{ background: s.barColor }}
               />
               <div
-                className="w-[42px] h-[42px] rounded-xl flex items-center justify-center mb-4"
+                className="w-[48px] h-[48px] rounded-xl flex items-center justify-center mb-5"
                 style={{ background: s.iconBg }}
               >
-                <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 fill-white" viewBox="0 0 24 24">
                   {s.icon}
                 </svg>
               </div>
-              <h3 className="text-sm font-medium text-white mb-1.5">
+              <h3 className="text-[16px] font-semibold text-white mb-2">
                 {s.title}
               </h3>
-              <p className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.55)" }}>
+              <p className="text-[14px] leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
                 {s.desc}
               </p>
             </Link>
