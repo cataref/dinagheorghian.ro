@@ -54,10 +54,10 @@ export default function ServicesGrid() {
     >
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {services.map((s, i) => (
-          <Reveal key={s.title} delay={i * 0.1}>
+          <Reveal key={s.title} delay={i * 0.1} className="h-full">
             <Link
               href={s.href}
-              className="block rounded-2xl p-7 relative overflow-hidden hover:-translate-y-1 transition-all group"
+              className="block rounded-2xl p-7 relative overflow-hidden hover:-translate-y-1 transition-all group h-full"
               style={{
                 background: "rgba(255,255,255,0.1)",
                 backdropFilter: "blur(12px)",
