@@ -49,8 +49,8 @@ const services = [
 export default function ServicesGrid() {
   return (
     <section
-      className="relative z-10 px-6 md:px-12 py-16"
-      style={{ background: "linear-gradient(180deg, #3D1A5A 0%, #5B2D6E 50%, #7A3568 100%)" }}
+      className="relative z-10 px-6 md:px-12 pt-10 pb-16"
+      style={{ background: "linear-gradient(180deg, #4A2555 0%, #5B2D6E 40%, #7A3568 100%)" }}
     >
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {services.map((s, i) => (
