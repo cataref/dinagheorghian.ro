@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(200,80,180,0.15)_0%,transparent_70%)] animate-[pulseGlow_6s_ease-in-out_infinite]" />
       <div className="absolute bottom-[10%] -left-[5%] w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(96,200,168,0.1)_0%,transparent_70%)] animate-[pulseGlow_8s_ease-in-out_2s_infinite]" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto min-h-screen flex flex-col lg:flex-row items-center px-6 md:px-12 pt-32 pb-20 gap-12 lg:gap-16">
+      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center px-6 md:px-12 pt-32 pb-20 gap-12 lg:gap-16">
         {/* Text */}
         <div className="flex-1 text-center lg:text-left">
           <motion.p

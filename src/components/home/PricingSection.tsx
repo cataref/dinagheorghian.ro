@@ -6,35 +6,35 @@ import Reveal from "@/components/Reveal";
 const tiers = [
   {
     name: "Claritate & explorare",
-    details: "1 sesiune · 60 min",
+    details: "1 sesiune \u00B7 60 min",
     price: 250,
     featured: false,
-    barGradient: "bg-gradient-to-r from-[#FFB0C8] to-accent-pink",
+    barColor: "linear-gradient(90deg, #FFB0C8, #E870A0)",
   },
   {
     name: "Pachet transformare",
-    details: "3 sesiuni · proces structurat",
+    details: "3 sesiuni \u00B7 proces structurat",
     price: 500,
     featured: true,
-    barGradient: "bg-gradient-to-r from-[#80F0D0] to-[#50E0B8]",
+    barColor: "linear-gradient(90deg, #80F0D0, #50E0B8)",
   },
   {
-    name: "Transformare profundă",
-    details: "5 sesiuni · meditații incluse",
+    name: "Transformare profund\u0103",
+    details: "5 sesiuni \u00B7 medita\u021Bii incluse",
     price: 800,
     featured: false,
-    barGradient: "bg-gradient-to-r from-[#D0A0FF] to-accent-lavender",
+    barColor: "linear-gradient(90deg, #D0A0FF, #C090F0)",
   },
 ];
 
 export default function PricingSection() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-white to-pink-bg">
+    <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #FDF0F4 100%)" }}>
       <div className="text-center mb-12">
-        <p className="text-[11px] tracking-[3px] uppercase text-purple-mid font-medium mb-3.5">
+        <p className="text-[11px] tracking-[3px] uppercase font-medium mb-3.5" style={{ color: "#5B2D6E" }}>
           Pachete sesiuni 1:1
         </p>
-        <h2 className="font-serif text-[clamp(28px,3vw,38px)] text-purple-dark font-normal">
+        <h2 className="font-serif text-[clamp(28px,3vw,38px)] font-normal" style={{ color: "#2D1B4E" }}>
           Alege formatul potrivit pentru tine
         </h2>
       </div>
@@ -43,55 +43,73 @@ export default function PricingSection() {
         {tiers.map((t, i) => (
           <Reveal key={t.name} delay={i * 0.1}>
             <div
-              className={`rounded-2xl p-9 text-center relative overflow-hidden transition-all hover:-translate-y-1 ${
+              className="rounded-2xl p-9 text-center relative overflow-hidden transition-all hover:-translate-y-1"
+              style={
                 t.featured
-                  ? "bg-[linear-gradient(160deg,#5B2D6E,#8B3A6B)] shadow-[0_12px_40px_rgba(91,45,110,0.25)]"
-                  : "bg-white border border-purple-bright/10 hover:shadow-[0_12px_40px_rgba(139,58,107,0.08)]"
-              }`}
+                  ? {
+                      background: "linear-gradient(160deg, #5B2D6E, #8B3A6B)",
+                      boxShadow: "0 12px 40px rgba(91,45,110,0.25)",
+                    }
+                  : {
+                      background: "#fff",
+                      border: "1px solid rgba(139,58,107,0.1)",
+                    }
+              }
             >
               <div
-                className={`absolute top-0 left-0 right-0 h-[3px] ${t.barGradient}`}
+                className="absolute top-0 left-0 right-0 h-[3px]"
+                style={{ background: t.barColor }}
               />
               {t.featured && (
-                <span className="inline-block bg-gradient-to-r from-[#F0D060] to-accent-gold text-[#5B3A00] text-[10px] font-semibold px-3.5 py-1 rounded-xl mb-3.5">
+                <span
+                  className="inline-block text-[10px] font-semibold px-3.5 py-1 rounded-xl mb-3.5"
+                  style={{
+                    background: "linear-gradient(135deg, #F0D060, #E8B830)",
+                    color: "#5B3A00",
+                  }}
+                >
                   Recomandat
                 </span>
               )}
               <p
-                className={`text-[13px] font-medium mb-1.5 ${
-                  t.featured ? "text-[#E0C8E8]" : "text-purple-mid"
-                }`}
+                className="text-[13px] font-medium mb-1.5"
+                style={{ color: t.featured ? "#E0C8E8" : "#5B2D6E" }}
               >
                 {t.name}
               </p>
               <p
-                className={`text-[11.5px] mb-5 ${
-                  t.featured ? "text-white/50" : "text-[#B0A0B8]"
-                }`}
+                className="text-[11.5px] mb-5"
+                style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#B0A0B8" }}
               >
                 {t.details}
               </p>
               <p
-                className={`font-serif text-4xl font-normal mb-1 ${
-                  t.featured ? "text-white" : "text-purple-dark"
-                }`}
+                className="font-serif text-4xl font-normal mb-1"
+                style={{ color: t.featured ? "#fff" : "#2D1B4E" }}
               >
                 {t.price}
               </p>
               <p
-                className={`text-sm ${
-                  t.featured ? "text-white/50" : "text-[#A090B0]"
-                }`}
+                className="text-sm"
+                style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#A090B0" }}
               >
                 lei
               </p>
               <Link
                 href="/contact"
-                className={`inline-block mt-6 px-7 py-2.5 rounded-full text-[13px] font-medium transition-all hover:-translate-y-0.5 ${
+                className="inline-block mt-6 px-7 py-2.5 rounded-full text-[13px] font-medium transition-all hover:-translate-y-0.5"
+                style={
                   t.featured
-                    ? "bg-[linear-gradient(135deg,#E870A0,#C050D0)] text-white shadow-[0_4px_16px_rgba(200,80,208,0.25)] hover:shadow-[0_6px_24px_rgba(200,80,208,0.35)]"
-                    : "border-[1.5px] border-[#D0A8E0] text-purple-mid hover:border-purple-mid"
-                }`}
+                    ? {
+                        background: "linear-gradient(135deg, #E870A0, #C050D0)",
+                        color: "#fff",
+                        boxShadow: "0 4px 16px rgba(200,80,208,0.25)",
+                      }
+                    : {
+                        border: "1.5px solid #D0A8E0",
+                        color: "#5B2D6E",
+                      }
+                }
               >
                 Alege
               </Link>

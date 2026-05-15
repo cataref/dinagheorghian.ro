@@ -5,12 +5,12 @@ import Reveal from "@/components/Reveal";
 import CTABanner from "@/components/CTABanner";
 
 const approach = [
-  { label: "Experiențe din copilărie", color: "bg-accent-pink" },
-  { label: "Emoții neprocesate", color: "bg-accent-teal" },
-  { label: "Tipare relaționale", color: "bg-accent-lavender" },
-  { label: "Momente de pierdere și criză", color: "bg-accent-gold" },
-  { label: "Convingeri subconștiente", color: "bg-accent-pink" },
-  { label: "Niveluri profunde de conștientizare", color: "bg-accent-teal" },
+  { label: "Experiențe din copilărie", color: "#E870A0" },
+  { label: "Emoții neprocesate", color: "#60C8A8" },
+  { label: "Tipare relaționale", color: "#C090F0" },
+  { label: "Momente de pierdere și criză", color: "#F0C840" },
+  { label: "Convingeri subconștiente", color: "#E870A0" },
+  { label: "Niveluri profunde de conștientizare", color: "#60C8A8" },
 ];
 
 export default function DespreContent() {
@@ -98,11 +98,12 @@ export default function DespreContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {approach.map((item, i) => (
               <Reveal key={item.label} delay={i * 0.08}>
-                <div className="flex items-center gap-3.5 p-4 rounded-xl bg-gradient-to-br from-pink-soft to-[#F5ECFE]/50">
+                <div className="flex items-center gap-3.5 p-4 rounded-xl" style={{ background: "linear-gradient(135deg, #FEF0F5, rgba(245,236,254,0.5))" }}>
                   <span
-                    className={`w-2.5 h-2.5 rounded-full ${item.color} flex-shrink-0`}
+                    className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                    style={{ background: item.color }}
                   />
-                  <p className="text-sm text-purple-dark">{item.label}</p>
+                  <p className="text-sm" style={{ color: "#2D1B4E" }}>{item.label}</p>
                 </div>
               </Reveal>
             ))}

@@ -16,8 +16,8 @@ const programs = [
       "Meditații ghidate personalizate",
       "Grup privat de suport",
     ],
-    accent: "from-accent-pink to-[#FFB0C8]",
-    dot: "bg-accent-pink",
+    accent: "linear-gradient(90deg, #E870A0, #FFB0C8)",
+    dot: "#E870A0",
   },
   {
     title: "Eliberare emoțională",
@@ -31,8 +31,8 @@ const programs = [
       "Acces la comunitatea privată",
       "Meditații ghidate",
     ],
-    accent: "from-accent-teal to-[#80F0D0]",
-    dot: "bg-accent-teal",
+    accent: "linear-gradient(90deg, #60C8A8, #80F0D0)",
+    dot: "#60C8A8",
   },
   {
     title: "Transformare profundă",
@@ -47,8 +47,8 @@ const programs = [
       "Suport continuu prin grup privat",
       "Certificat de parcurgere",
     ],
-    accent: "from-accent-lavender to-[#E0C8FF]",
-    dot: "bg-accent-lavender",
+    accent: "linear-gradient(90deg, #C090F0, #E0C8FF)",
+    dot: "#C090F0",
   },
 ];
 
@@ -112,9 +112,10 @@ export default function ProgrameContent() {
         <div className="max-w-[1000px] mx-auto space-y-8">
           {programs.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.1}>
-              <div className="rounded-2xl bg-white border border-purple-bright/8 overflow-hidden hover:shadow-[0_12px_40px_rgba(139,58,107,0.06)] transition-shadow">
+              <div className="rounded-2xl bg-white overflow-hidden transition-shadow" style={{ border: "1px solid rgba(139,58,107,0.08)" }}>
                 <div
-                  className={`h-[3px] bg-gradient-to-r ${p.accent}`}
+                  className="h-[3px]"
+                  style={{ background: p.accent }}
                 />
                 <div className="p-8 md:p-10">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
@@ -140,7 +141,8 @@ export default function ProgrameContent() {
                         {p.includes.map((inc) => (
                           <div key={inc} className="flex items-start gap-2.5">
                             <span
-                              className={`w-1.5 h-1.5 rounded-full ${p.dot} mt-1.5 flex-shrink-0`}
+                              className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0"
+                              style={{ background: p.dot }}
                             />
                             <p className="text-[13px] text-[#6B5070]">{inc}</p>
                           </div>

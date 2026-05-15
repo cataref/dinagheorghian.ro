@@ -10,21 +10,21 @@ const placeholderPosts = [
     excerpt:
       "Mulți oameni cred că dacă nu se gândesc la durere, aceasta va dispare. În realitate, emoțiile neexprimate nu dispar — se acumulează.",
     category: "Emoții",
-    color: "bg-accent-pink",
+    color: "#E870A0",
   },
   {
     title: "Cum să traversezi o perioadă de doliu",
     excerpt:
       "Doliul nu are un calendar. Nu există un moment corect în care ar trebui să te simți mai bine. Iată ce poți face pentru tine.",
     category: "Doliu",
-    color: "bg-accent-lavender",
+    color: "#C090F0",
   },
   {
     title: "Ce înseamnă cu adevărat reconectarea cu tine",
     excerpt:
       "Reconectarea cu tine nu este un concept abstract. Este un proces real, cu etape concrete, pe care îl poți parcurge conștient.",
     category: "Transformare",
-    color: "bg-accent-teal",
+    color: "#60C8A8",
   },
 ];
 
@@ -49,7 +49,8 @@ export default function BlogContent() {
                   </div>
                   <div className="p-6">
                     <span
-                      className={`inline-block text-[10px] text-white px-2.5 py-0.5 rounded-full ${post.color} font-medium mb-3`}
+                      className="inline-block text-[10px] text-white px-2.5 py-0.5 rounded-full font-medium mb-3"
+                      style={{ background: post.color }}
                     >
                       {post.category}
                     </span>

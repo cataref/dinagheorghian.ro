@@ -186,7 +186,7 @@ export default function SesiuniContent() {
                 }`}
               >
                 {t.featured && (
-                  <span className="inline-block bg-gradient-to-r from-[#F0D060] to-accent-gold text-[#5B3A00] text-[10px] font-semibold px-3.5 py-1 rounded-xl mb-3">
+                  <span className="inline-block text-[#5B3A00] text-[10px] font-semibold px-3.5 py-1 rounded-xl mb-3" style={{ background: "linear-gradient(135deg, #F0D060, #E8B830)" }}>
                     Recomandat
                   </span>
                 )}
@@ -215,9 +215,8 @@ export default function SesiuniContent() {
                   {t.features.map((f) => (
                     <div key={f} className="flex items-start gap-2.5">
                       <svg
-                        className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                          t.featured ? "fill-accent-teal" : "fill-accent-pink"
-                        }`}
+                        className="w-4 h-4 mt-0.5 flex-shrink-0"
+                        style={{ fill: t.featured ? "#60C8A8" : "#E870A0" }}
                         viewBox="0 0 24 24"
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
