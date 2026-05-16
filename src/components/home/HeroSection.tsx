@@ -89,17 +89,13 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
           className="relative flex items-center justify-center flex-shrink-0"
         >
-          {/* Photo placeholder */}
-          <div className="w-[220px] h-[280px] rounded-3xl glass flex items-center justify-center relative z-10 overflow-hidden">
-            <div className="text-center">
-              <div className="w-[80px] h-[80px] rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: "linear-gradient(135deg, #E870A0, #A060D0)", boxShadow: "0 0 40px rgba(232,112,160,0.3)" }}>
-                <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
-                  <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-                </svg>
-              </div>
-              <p className="text-[15px] text-white font-medium">Dina Gheorghian</p>
-              <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.4)" }}>Fotografia ta aici</p>
-            </div>
+          {/* Photo */}
+          <div className="w-[240px] h-[300px] rounded-3xl relative z-10 overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.15)", boxShadow: "0 12px 40px rgba(0,0,0,0.25)" }}>
+            <img
+              src="/images/dina-portrait.png"
+              alt="Dina Gheorghian"
+              className="w-full h-full object-cover object-top"
+            />
           </div>
 
           {/* Floating badges */}
