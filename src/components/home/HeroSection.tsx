@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #1A0A2E 0%, #2D1B4E 15%, #5B2D6E 35%, #8B3A6B 55%, #9B4070 75%, #7A3568 100%)" }}>
+    <section className="relative overflow-hidden" style={{ background: "linear-gradient(160deg, #1E3230 0%, #264540 18%, #306858 38%, #4A8870 52%, #78B898 68%, #A8D0B8 80%, #D8E8D8 92%, #EEF4EE 100%)" }}>
       {/* Ambient orbs */}
-      <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(200,80,180,0.15)_0%,transparent_70%)] animate-[pulseGlow_6s_ease-in-out_infinite]" />
-      <div className="absolute bottom-[10%] -left-[5%] w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(96,200,168,0.1)_0%,transparent_70%)] animate-[pulseGlow_8s_ease-in-out_2s_infinite]" />
+      <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(212,176,96,0.15)_0%,transparent_70%)] animate-[pulseGlow_6s_ease-in-out_infinite]" />
+      <div className="absolute bottom-[10%] -left-[5%] w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(120,200,160,0.1)_0%,transparent_70%)] animate-[pulseGlow_8s_ease-in-out_2s_infinite]" />
 
       <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center px-6 md:px-12 pt-28 pb-10 gap-10 lg:gap-14">
         {/* Text */}
@@ -18,7 +18,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-[13px] tracking-[3.5px] uppercase font-medium mb-4"
-            style={{ color: "#E8A0D0" }}
+            style={{ color: "#D4C088" }}
           >
             Ghid transformațional · Coach
           </motion.p>
@@ -68,7 +68,7 @@ export default function HeroSection() {
             <Link
               href="/contact"
               className="text-white px-9 py-4 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all"
-              style={{ background: "linear-gradient(135deg, #E870A0, #C050D0)", boxShadow: "0 6px 24px rgba(200,80,208,0.3)" }}
+              style={{ background: "linear-gradient(135deg, #E870A0, #A855D0)", boxShadow: "0 6px 24px rgba(168,85,208,0.3)" }}
             >
               Programează o sesiune
             </Link>
@@ -105,10 +105,10 @@ export default function HeroSection() {
             </p>
             <p className="text-[13px] text-white font-medium">De ce eu?</p>
             <div className="flex gap-1.5 mt-1.5">
-              <span className="w-[7px] h-[7px] rounded-full bg-[#FFB0C8]" />
+              <span className="w-[7px] h-[7px] rounded-full bg-[#D4C088]" />
               <span className="w-[7px] h-[7px] rounded-full bg-[#80E8C8]" />
               <span className="w-[7px] h-[7px] rounded-full bg-[#F0D060]" />
-              <span className="w-[7px] h-[7px] rounded-full bg-[#C090F0]" />
+              <span className="w-[7px] h-[7px] rounded-full bg-[#78B898]" />
             </div>
           </div>
 
@@ -122,7 +122,7 @@ export default function HeroSection() {
           </div>
 
           {/* Glow behind photo */}
-          <div className="absolute w-[300px] h-[300px] rounded-full bg-[radial-gradient(circle,rgba(200,80,180,0.2)_0%,transparent_70%)] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0" />
+          <div className="absolute w-[300px] h-[300px] rounded-full bg-[radial-gradient(circle,rgba(212,176,96,0.2)_0%,transparent_70%)] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0" />
         </motion.div>
       </div>
     </section>

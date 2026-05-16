@@ -79,13 +79,13 @@ export default function SesiuniContent() {
       />
 
       {/* How we work */}
-      <section className="py-20 px-6 bg-gradient-to-b from-pink-bg to-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
         <div className="max-w-[700px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-4">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-4">
               Cum lucrăm
             </h2>
-            <p className="text-[15px] text-[#6B5070] leading-relaxed mb-8 font-light">
+            <p className="text-[15px] text-[#4A6858] leading-relaxed mb-8 font-light">
               Nu este o discuție generală, ci un spațiu de explorare profundă, în
               care lucrăm cu emoțiile, convingerile și experiențele tale de viață.
             </p>
@@ -93,9 +93,9 @@ export default function SesiuniContent() {
           <div className="space-y-3">
             {methods.map((m, i) => (
               <Reveal key={m} delay={i * 0.08}>
-                <div className="flex items-start gap-3.5 p-4 rounded-xl bg-white border border-purple-bright/8">
-                  <span className="w-2 h-2 rounded-full bg-accent-pink mt-1.5 flex-shrink-0" />
-                  <p className="text-sm text-[#5A4060]">{m}</p>
+                <div className="flex items-start gap-3.5 p-4 rounded-xl bg-white border border-teal-bright/8">
+                  <span className="w-2 h-2 rounded-full bg-accent-rose mt-1.5 flex-shrink-0" />
+                  <p className="text-sm text-[#3A5848]">{m}</p>
                 </div>
               </Reveal>
             ))}
@@ -108,7 +108,7 @@ export default function SesiuniContent() {
         <div className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
             <Reveal>
-              <h2 className="font-serif text-[clamp(22px,2.5vw,30px)] text-purple-dark font-normal leading-snug mb-6">
+              <h2 className="font-serif text-[clamp(22px,2.5vw,30px)] text-teal-dark font-normal leading-snug mb-6">
                 Acest spațiu este pentru tine dacă…
               </h2>
             </Reveal>
@@ -117,7 +117,7 @@ export default function SesiuniContent() {
                 <Reveal key={f} delay={i * 0.06}>
                   <div className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent-teal mt-2 flex-shrink-0" />
-                    <p className="text-[14px] text-[#6B5070] leading-relaxed font-light">
+                    <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
                       {f}
                     </p>
                   </div>
@@ -128,7 +128,7 @@ export default function SesiuniContent() {
 
           <div>
             <Reveal>
-              <h2 className="font-serif text-[clamp(22px,2.5vw,30px)] text-purple-dark font-normal leading-snug mb-6">
+              <h2 className="font-serif text-[clamp(22px,2.5vw,30px)] text-teal-dark font-normal leading-snug mb-6">
                 Ce se schimbă prin acest proces
               </h2>
             </Reveal>
@@ -137,7 +137,7 @@ export default function SesiuniContent() {
                 <Reveal key={o} delay={i * 0.06}>
                   <div className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent-lavender mt-2 flex-shrink-0" />
-                    <p className="text-[14px] text-[#6B5070] leading-relaxed font-light">
+                    <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
                       {o}
                     </p>
                   </div>
@@ -149,13 +149,13 @@ export default function SesiuniContent() {
       </section>
 
       {/* Session details box */}
-      <section className="py-12 px-6 bg-gradient-to-b from-white to-pink-bg">
+      <section className="py-12 px-6 bg-gradient-to-b from-white to-mint-bg">
         <Reveal>
-          <div className="max-w-[500px] mx-auto bg-gradient-to-br from-pink-soft to-[#F5ECFE]/50 rounded-2xl p-8 text-center">
-            <p className="text-[11px] tracking-[2px] uppercase text-purple-mid/60 mb-4">
+          <div className="max-w-[500px] mx-auto bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50 rounded-2xl p-8 text-center">
+            <p className="text-[11px] tracking-[2px] uppercase text-teal-mid/60 mb-4">
               Modul de desfășurare
             </p>
-            <div className="space-y-2 text-sm text-[#6B5070]">
+            <div className="space-y-2 text-sm text-[#4A6858]">
               <p>Sesiuni online (Zoom)</p>
               <p>Durată: 60 minute</p>
               <p>Proces personalizat, adaptat în timp real</p>
@@ -165,12 +165,12 @@ export default function SesiuniContent() {
       </section>
 
       {/* Pricing */}
-      <section className="py-20 px-6 bg-pink-bg">
+      <section className="py-20 px-6 bg-mint-bg">
         <div className="text-center mb-12">
-          <p className="text-[11px] tracking-[3px] uppercase text-purple-mid font-medium mb-3.5">
+          <p className="text-[11px] tracking-[3px] uppercase text-teal-mid font-medium mb-3.5">
             Prețuri & Pachete
           </p>
-          <h2 className="font-serif text-[clamp(28px,3vw,38px)] text-purple-dark font-normal">
+          <h2 className="font-serif text-[clamp(28px,3vw,38px)] text-teal-dark font-normal">
             Alege formatul potrivit pentru tine
           </h2>
         </div>
@@ -181,8 +181,8 @@ export default function SesiuniContent() {
               <div
                 className={`rounded-2xl p-8 relative overflow-hidden transition-all hover:-translate-y-1 ${
                   t.featured
-                    ? "bg-[linear-gradient(160deg,#5B2D6E,#8B3A6B)] shadow-[0_12px_40px_rgba(91,45,110,0.25)] text-white"
-                    : "bg-white border border-purple-bright/10 hover:shadow-[0_12px_40px_rgba(139,58,107,0.08)]"
+                    ? "bg-[linear-gradient(160deg,#306858,#4A8870)] shadow-[0_12px_40px_rgba(48,104,88,0.25)] text-white"
+                    : "bg-white border border-teal-bright/10 hover:shadow-[0_12px_40px_rgba(48,104,88,0.08)]"
                 }`}
               >
                 {t.featured && (
@@ -192,21 +192,21 @@ export default function SesiuniContent() {
                 )}
                 <h3
                   className={`text-lg font-serif font-normal mb-1 ${
-                    t.featured ? "text-white" : "text-purple-dark"
+                    t.featured ? "text-white" : "text-teal-dark"
                   }`}
                 >
                   {t.name}
                 </h3>
                 <p
                   className={`text-xs mb-3 ${
-                    t.featured ? "text-white/50" : "text-[#B0A0B8]"
+                    t.featured ? "text-white/50" : "text-[#90B0A0]"
                   }`}
                 >
                   {t.sub}
                 </p>
                 <p
                   className={`text-[13px] leading-relaxed mb-5 ${
-                    t.featured ? "text-white/60" : "text-[#6B5070]"
+                    t.featured ? "text-white/60" : "text-[#4A6858]"
                   } font-light`}
                 >
                   {t.desc}
@@ -223,7 +223,7 @@ export default function SesiuniContent() {
                       </svg>
                       <p
                         className={`text-[13px] ${
-                          t.featured ? "text-white/70" : "text-[#6B5070]"
+                          t.featured ? "text-white/70" : "text-[#4A6858]"
                         }`}
                       >
                         {f}
@@ -233,13 +233,13 @@ export default function SesiuniContent() {
                 </div>
                 <p
                   className={`font-serif text-3xl font-normal mb-1 ${
-                    t.featured ? "text-white" : "text-purple-dark"
+                    t.featured ? "text-white" : "text-teal-dark"
                   }`}
                 >
                   {t.price}{" "}
                   <span
                     className={`text-sm font-sans ${
-                      t.featured ? "text-white/40" : "text-[#A090B0]"
+                      t.featured ? "text-white/40" : "text-[#88A898]"
                     }`}
                   >
                     lei
@@ -249,8 +249,8 @@ export default function SesiuniContent() {
                   href="/contact"
                   className={`inline-block mt-4 px-7 py-2.5 rounded-full text-[13px] font-medium transition-all hover:-translate-y-0.5 ${
                     t.featured
-                      ? "bg-[linear-gradient(135deg,#E870A0,#C050D0)] text-white shadow-[0_4px_16px_rgba(200,80,208,0.25)]"
-                      : "border-[1.5px] border-[#D0A8E0] text-purple-mid hover:border-purple-mid"
+                      ? "bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white shadow-[0_4px_16px_rgba(168,85,208,0.25)]"
+                      : "border-[1.5px] border-[#A8D0B8] text-teal-mid hover:border-teal-mid"
                   }`}
                 >
                   Programează
@@ -265,10 +265,10 @@ export default function SesiuniContent() {
       <section className="py-16 px-6 bg-white">
         <Reveal>
           <div className="max-w-[600px] mx-auto text-center">
-            <p className="font-serif text-xl text-purple-dark italic leading-relaxed mb-4">
+            <p className="font-serif text-xl text-teal-dark italic leading-relaxed mb-4">
               Acest proces nu este despre sfaturi rapide sau soluții externe."
             </p>
-            <p className="text-[14px] text-[#6B5070] leading-relaxed font-light">
+            <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
               Este un spațiu de lucru interior profund, în care te întorci către
               tine și începi să înțelegi ceea ce se întâmplă în interiorul tău la
               un nivel mai profund.

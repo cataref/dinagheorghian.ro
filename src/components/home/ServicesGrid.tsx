@@ -8,8 +8,8 @@ const services = [
     title: "Sesiuni 1:1",
     desc: "Lucru individual profund, adaptat ție și procesului tău interior",
     href: "/sesiuni",
-    barColor: "linear-gradient(90deg, #E870A0, #FFB0C8)",
-    iconBg: "linear-gradient(135deg, #E870A0, #D4507C)",
+    barColor: "linear-gradient(90deg, #E870A0, #D4C088)",
+    iconBg: "linear-gradient(135deg, #E870A0, #C87850)",
     icon: (
       <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
     ),
@@ -28,8 +28,8 @@ const services = [
     title: "Retreaturi",
     desc: "Experiențe imersive de reconectare interioară în natură",
     href: "/retreaturi",
-    barColor: "linear-gradient(90deg, #C090F0, #E0C8FF)",
-    iconBg: "linear-gradient(135deg, #A080D8, #8060C0)",
+    barColor: "linear-gradient(90deg, #A8D0B8, #78C8A0)",
+    iconBg: "linear-gradient(135deg, #78B898, #508878)",
     icon: (
       <path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22L14 6z" />
     ),
@@ -50,7 +50,7 @@ export default function ServicesGrid() {
   return (
     <section
       className="relative z-10 px-6 md:px-12 pt-8 pb-20"
-      style={{ background: "linear-gradient(180deg, #7A3568 0%, #5B2D6E 50%, #4A2258 100%)" }}
+      style={{ background: "linear-gradient(180deg, #A8D0B8 0%, #4A8870 30%, #306858 60%, #264540 100%)" }}
     >
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {services.map((s, i) => (

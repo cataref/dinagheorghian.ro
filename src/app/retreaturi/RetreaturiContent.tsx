@@ -54,19 +54,19 @@ export default function RetreaturiContent() {
       />
 
       {/* Intro */}
-      <section className="py-20 px-6 bg-gradient-to-b from-pink-bg to-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
         <div className="max-w-[700px] mx-auto text-center">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-6">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-6">
               Ce este un retreat de transformare?
             </h2>
-            <p className="text-[15px] text-[#6B5070] leading-[1.9] mb-5 font-light">
+            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-5 font-light">
               Un retreat nu este o vacanță. Este un spațiu creat cu intenție, în
               care te extragi din viața de zi cu zi pentru a te întâlni cu tine
               la un nivel mai profund. Este un proces de reconectare interioară
               susținut de natură, comunitate și ghidare profesională.
             </p>
-            <p className="text-[15px] text-[#6B5070] leading-[1.9] font-light">
+            <p className="text-[15px] text-[#4A6858] leading-[1.9] font-light">
               Retreaturile mele sunt gândite pentru grupuri mici de femei și
               includ lucru interior ghidat, meditații, timp în natură și spațiu
               pentru reflecție personală.
@@ -79,23 +79,23 @@ export default function RetreaturiContent() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[900px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-10 text-center">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-10 text-center">
               Pilonii experienței
             </h2>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {experiences.map((e, i) => (
               <Reveal key={e.title} delay={i * 0.1}>
-                <div className="rounded-2xl bg-gradient-to-br from-pink-soft to-[#F5ECFE]/50 p-7 hover:shadow-[0_8px_30px_rgba(139,58,107,0.06)] transition-shadow">
-                  <div className="w-10 h-10 rounded-xl bg-[linear-gradient(135deg,#E870A0,#C050D0)] flex items-center justify-center mb-4">
+                <div className="rounded-2xl bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50 p-7 hover:shadow-[0_8px_30px_rgba(48,104,88,0.06)] transition-shadow">
+                  <div className="w-10 h-10 rounded-xl bg-[linear-gradient(135deg,#E870A0,#A855D0)] flex items-center justify-center mb-4">
                     <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                       {e.icon}
                     </svg>
                   </div>
-                  <h3 className="text-[15px] font-medium text-purple-dark mb-2">
+                  <h3 className="text-[15px] font-medium text-teal-dark mb-2">
                     {e.title}
                   </h3>
-                  <p className="text-[13px] text-[#6B5070] leading-relaxed font-light">
+                  <p className="text-[13px] text-[#4A6858] leading-relaxed font-light">
                     {e.desc}
                   </p>
                 </div>
@@ -106,24 +106,24 @@ export default function RetreaturiContent() {
       </section>
 
       {/* What to expect */}
-      <section className="py-20 px-6 bg-gradient-to-b from-white to-pink-bg">
+      <section className="py-20 px-6 bg-gradient-to-b from-white to-mint-bg">
         <div className="max-w-[600px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-8 text-center">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-8 text-center">
               Ce te așteaptă
             </h2>
           </Reveal>
           <div className="space-y-3">
             {whatToExpect.map((item, i) => (
               <Reveal key={item} delay={i * 0.06}>
-                <div className="flex items-start gap-3.5 p-4 rounded-xl bg-white border border-purple-bright/8">
+                <div className="flex items-start gap-3.5 p-4 rounded-xl bg-white border border-teal-bright/8">
                   <svg
                     className="w-4 h-4 fill-accent-teal mt-0.5 flex-shrink-0"
                     viewBox="0 0 24 24"
                   >
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                   </svg>
-                  <p className="text-[14px] text-[#6B5070]">{item}</p>
+                  <p className="text-[14px] text-[#4A6858]">{item}</p>
                 </div>
               </Reveal>
             ))}
@@ -132,23 +132,23 @@ export default function RetreaturiContent() {
       </section>
 
       {/* Upcoming */}
-      <section className="py-20 px-6 bg-pink-bg">
+      <section className="py-20 px-6 bg-mint-bg">
         <Reveal>
-          <div className="max-w-[500px] mx-auto text-center bg-white rounded-2xl p-10 border border-purple-bright/8">
-            <p className="text-[11px] tracking-[2px] uppercase text-purple-mid/50 mb-4">
+          <div className="max-w-[500px] mx-auto text-center bg-white rounded-2xl p-10 border border-teal-bright/8">
+            <p className="text-[11px] tracking-[2px] uppercase text-teal-mid/50 mb-4">
               Următorul retreat
             </p>
-            <p className="font-serif text-2xl text-purple-dark font-normal mb-3">
+            <p className="font-serif text-2xl text-teal-dark font-normal mb-3">
               În curând
             </p>
-            <p className="text-[14px] text-[#6B5070] leading-relaxed font-light mb-6">
+            <p className="text-[14px] text-[#4A6858] leading-relaxed font-light mb-6">
               Retreaturile sunt organizate de câteva ori pe an, în locații
               speciale din România. Înscrie-te pe lista de așteptare pentru a fi
               prima care află detaliile.
             </p>
             <a
               href="/contact"
-              className="inline-block bg-[linear-gradient(135deg,#E870A0,#C050D0)] text-white px-7 py-3 rounded-full text-[14px] font-medium shadow-[0_6px_24px_rgba(200,80,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,80,208,0.4)] transition-all"
+              className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-7 py-3 rounded-full text-[14px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
             >
               Înscrie-te pe listă
             </a>

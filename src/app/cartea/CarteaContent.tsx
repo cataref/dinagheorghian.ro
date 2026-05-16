@@ -32,10 +32,10 @@ export default function CarteaContent() {
       />
 
       {/* Book hero with cover */}
-      <section className="py-20 px-6 bg-gradient-to-b from-pink-bg to-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
         <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-14 items-center">
           {/* Cover */}
-          <Reveal className="flex-shrink-0 w-[260px] h-[370px] rounded-2xl bg-[linear-gradient(160deg,#2D1B4E,#5B2D6E,#8B3A6B)] relative overflow-hidden shadow-[16px_16px_50px_rgba(45,27,78,0.25)]">
+          <Reveal className="flex-shrink-0 w-[260px] h-[370px] rounded-2xl bg-[linear-gradient(160deg,#264540,#306858,#4A8870)] relative overflow-hidden shadow-[16px_16px_50px_rgba(38,69,64,0.3)]">
             <div className="absolute inset-6 border border-white/20 rounded-lg flex flex-col justify-end p-6">
               <p className="font-serif text-2xl text-white font-normal leading-snug mb-2">
                 De ce eu?
@@ -51,30 +51,30 @@ export default function CarteaContent() {
 
           {/* Description */}
           <Reveal delay={0.15} className="flex-1 text-center md:text-left">
-            <p className="text-[15px] text-[#6B5070] leading-[1.9] mb-5 font-light">
+            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-5 font-light">
               De ce eu?" este o carte născută dintr-o experiență reală de
               pierdere și transformare profundă. Nu este o carte de dezvoltare
               personală clasică. Este o carte scrisă din suflet, pentru sufletul
               tău.
             </p>
-            <p className="text-[15px] text-[#6B5070] leading-[1.9] mb-5 font-light">
+            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-5 font-light">
               Nu îți arăt cum să mergi mai departe". Îți arăt cum poți merge
               mai departe fără să te pierzi pe tine. Cum poți traversa durerea
               fără să o eviți, cum poți transforma suferința într-o cale de
               creștere autentică.
             </p>
-            <p className="text-[15px] text-[#6B5070] leading-[1.9] mb-6 font-light">
+            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-6 font-light">
               Această carte este povestea mea — dar și ghidul pe care aș fi vrut
               să-l am în cele mai grele momente ale vieții mele.
             </p>
             <div className="flex items-center gap-6 justify-center md:justify-start">
-              <p className="font-serif text-4xl text-purple-mid">
+              <p className="font-serif text-4xl text-teal-mid">
                 58{" "}
-                <span className="text-base text-[#A090B0] font-sans">RON</span>
+                <span className="text-base text-[#88A898] font-sans">RON</span>
               </p>
               <a
                 href="#"
-                className="inline-block bg-[linear-gradient(135deg,#E870A0,#C050D0)] text-white px-8 py-3.5 rounded-full text-sm font-medium shadow-[0_6px_24px_rgba(200,80,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,80,208,0.4)] transition-all"
+                className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-8 py-3.5 rounded-full text-sm font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
               >
                 Comandă cartea
               </a>
@@ -87,16 +87,16 @@ export default function CarteaContent() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[600px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-8 text-center">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-8 text-center">
               Această carte este pentru tine dacă…
             </h2>
           </Reveal>
           <div className="space-y-3">
             {forYou.map((item, i) => (
               <Reveal key={item} delay={i * 0.06}>
-                <div className="flex items-start gap-3.5 p-4 rounded-xl bg-gradient-to-br from-pink-soft to-[#F5ECFE]/50">
-                  <span className="w-2 h-2 rounded-full bg-accent-pink mt-1.5 flex-shrink-0" />
-                  <p className="text-[14px] text-[#5A4060]">{item}</p>
+                <div className="flex items-start gap-3.5 p-4 rounded-xl bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50">
+                  <span className="w-2 h-2 rounded-full bg-accent-rose mt-1.5 flex-shrink-0" />
+                  <p className="text-[14px] text-[#3A5848]">{item}</p>
                 </div>
               </Reveal>
             ))}
@@ -105,10 +105,10 @@ export default function CarteaContent() {
       </section>
 
       {/* Chapters preview */}
-      <section className="py-20 px-6 bg-gradient-to-b from-white to-pink-bg">
+      <section className="py-20 px-6 bg-gradient-to-b from-white to-mint-bg">
         <div className="max-w-[600px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-8 text-center">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-8 text-center">
               Ce vei găsi înăuntru
             </h2>
           </Reveal>
@@ -119,7 +119,7 @@ export default function CarteaContent() {
                   <span className="text-2xl font-serif text-accent-lavender/40 flex-shrink-0 w-8 text-right">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <p className="text-[14px] text-[#5A4060] font-light">{ch}</p>
+                  <p className="text-[14px] text-[#3A5848] font-light">{ch}</p>
                 </div>
               </Reveal>
             ))}
@@ -128,18 +128,18 @@ export default function CarteaContent() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-16 px-6 bg-pink-bg">
+      <section className="py-16 px-6 bg-mint-bg">
         <Reveal>
           <div className="max-w-[560px] mx-auto bg-white rounded-3xl p-10 relative text-center">
-            <span className="absolute top-3 left-7 font-serif text-[64px] text-rose-light/40 leading-none select-none">
+            <span className="absolute top-3 left-7 font-serif text-[64px] text-gold-light/40 leading-none select-none">
               &ldquo;
             </span>
-            <p className="font-serif text-[17px] text-purple-mid leading-relaxed italic mb-4 relative z-10">
+            <p className="font-serif text-[17px] text-teal-mid leading-relaxed italic mb-4 relative z-10">
               Am citit cartea dintr-o suflare. Am plâns, dar nu de tristețe — de
               recunoaștere. Am simțit că cineva, în sfârșit, a pus în cuvinte
               ceea ce eu nu am reușit.
             </p>
-            <p className="text-xs text-[#A080B0]">— Andreea, cititoare</p>
+            <p className="text-xs text-[#78A890]">— Andreea, cititoare</p>
           </div>
         </Reveal>
       </section>
@@ -148,16 +148,16 @@ export default function CarteaContent() {
       <section className="py-20 px-6 bg-white">
         <Reveal>
           <div className="max-w-[500px] mx-auto text-center">
-            <p className="font-serif text-3xl text-purple-dark font-normal mb-3">
+            <p className="font-serif text-3xl text-teal-dark font-normal mb-3">
               58{" "}
-              <span className="text-base text-[#A090B0] font-sans">RON</span>
+              <span className="text-base text-[#88A898] font-sans">RON</span>
             </p>
-            <p className="text-[14px] text-[#6B5070] leading-relaxed font-light mb-6">
+            <p className="text-[14px] text-[#4A6858] leading-relaxed font-light mb-6">
               Disponibilă în format fizic. Livrare în toată România.
             </p>
             <a
               href="#"
-              className="inline-block bg-[linear-gradient(135deg,#E870A0,#C050D0)] text-white px-10 py-4 rounded-full text-[15px] font-medium shadow-[0_6px_24px_rgba(200,80,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,80,208,0.4)] transition-all"
+              className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-10 py-4 rounded-full text-[15px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
             >
               Comandă cartea
             </a>

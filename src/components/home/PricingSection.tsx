@@ -9,7 +9,7 @@ const tiers = [
     details: "1 sesiune \u00B7 60 min",
     price: 250,
     featured: false,
-    barColor: "linear-gradient(90deg, #FFB0C8, #E870A0)",
+    barColor: "linear-gradient(90deg, #D4C088, #E870A0)",
   },
   {
     name: "Pachet transformare",
@@ -23,18 +23,18 @@ const tiers = [
     details: "5 sesiuni \u00B7 medita\u021Bii incluse",
     price: 800,
     featured: false,
-    barColor: "linear-gradient(90deg, #D0A0FF, #C090F0)",
+    barColor: "linear-gradient(90deg, #A8D0B8, #78B898)",
   },
 ];
 
 export default function PricingSection() {
   return (
-    <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #FDF0F4 100%)" }}>
+    <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
       <div className="text-center mb-12">
-        <p className="text-[11px] tracking-[3px] uppercase font-medium mb-3.5" style={{ color: "#5B2D6E" }}>
+        <p className="text-[11px] tracking-[3px] uppercase font-medium mb-3.5" style={{ color: "#306858" }}>
           Pachete sesiuni 1:1
         </p>
-        <h2 className="font-serif text-[clamp(28px,3vw,38px)] font-normal" style={{ color: "#2D1B4E" }}>
+        <h2 className="font-serif text-[clamp(28px,3vw,38px)] font-normal" style={{ color: "#264540" }}>
           Alege formatul potrivit pentru tine
         </h2>
       </div>
@@ -47,12 +47,12 @@ export default function PricingSection() {
               style={
                 t.featured
                   ? {
-                      background: "linear-gradient(160deg, #5B2D6E, #8B3A6B)",
-                      boxShadow: "0 12px 40px rgba(91,45,110,0.25)",
+                      background: "linear-gradient(160deg, #306858, #4A8870)",
+                      boxShadow: "0 12px 40px rgba(48,104,88,0.25)",
                     }
                   : {
                       background: "#fff",
-                      border: "1px solid rgba(139,58,107,0.1)",
+                      border: "1px solid rgba(48,104,88,0.1)",
                     }
               }
             >
@@ -73,25 +73,25 @@ export default function PricingSection() {
               )}
               <p
                 className="text-[13px] font-medium mb-1.5"
-                style={{ color: t.featured ? "#E0C8E8" : "#5B2D6E" }}
+                style={{ color: t.featured ? "#C8E0D0" : "#306858" }}
               >
                 {t.name}
               </p>
               <p
                 className="text-[11.5px] mb-5"
-                style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#B0A0B8" }}
+                style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#90B0A0" }}
               >
                 {t.details}
               </p>
               <p
                 className="font-serif text-4xl font-normal mb-1"
-                style={{ color: t.featured ? "#fff" : "#2D1B4E" }}
+                style={{ color: t.featured ? "#fff" : "#264540" }}
               >
                 {t.price}
               </p>
               <p
                 className="text-sm"
-                style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#A090B0" }}
+                style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#88A898" }}
               >
                 lei
               </p>
@@ -101,13 +101,13 @@ export default function PricingSection() {
                 style={
                   t.featured
                     ? {
-                        background: "linear-gradient(135deg, #E870A0, #C050D0)",
+                        background: "linear-gradient(135deg, #E870A0, #A855D0)",
                         color: "#fff",
-                        boxShadow: "0 4px 16px rgba(200,80,208,0.25)",
+                        boxShadow: "0 4px 16px rgba(168,85,208,0.25)",
                       }
                     : {
-                        border: "1.5px solid #D0A8E0",
-                        color: "#5B2D6E",
+                        border: "1.5px solid #A8D0B8",
+                        color: "#306858",
                       }
                 }
               >

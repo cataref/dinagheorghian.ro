@@ -34,7 +34,7 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 transition-all duration-400 ${
         scrolled || !isHome
-          ? "bg-purple-deep/85 backdrop-blur-xl shadow-lg"
+          ? "bg-teal-deep/85 backdrop-blur-xl shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -99,7 +99,7 @@ export default function Navigation() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-50 bg-purple-deep/96 backdrop-blur-2xl flex flex-col items-center justify-center gap-6"
+            className="fixed inset-0 z-50 bg-teal-deep/96 backdrop-blur-2xl flex flex-col items-center justify-center gap-6"
           >
             <button
               onClick={() => setOpen(false)}

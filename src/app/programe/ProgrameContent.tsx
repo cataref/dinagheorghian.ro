@@ -16,7 +16,7 @@ const programs = [
       "Meditații ghidate personalizate",
       "Grup privat de suport",
     ],
-    accent: "linear-gradient(90deg, #E870A0, #FFB0C8)",
+    accent: "linear-gradient(90deg, #E870A0, #D4C088)",
     dot: "#E870A0",
   },
   {
@@ -47,8 +47,8 @@ const programs = [
       "Suport continuu prin grup privat",
       "Certificat de parcurgere",
     ],
-    accent: "linear-gradient(90deg, #C090F0, #E0C8FF)",
-    dot: "#C090F0",
+    accent: "linear-gradient(90deg, #78B898, #B8D8C8)",
+    dot: "#78B898",
   },
 ];
 
@@ -85,20 +85,20 @@ export default function ProgrameContent() {
       />
 
       {/* Intro */}
-      <section className="py-20 px-6 bg-gradient-to-b from-pink-bg to-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
         <div className="max-w-[700px] mx-auto text-center">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-6">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-6">
               De ce un program de grup?
             </h2>
-            <p className="text-[15px] text-[#6B5070] leading-[1.9] mb-5 font-light">
+            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-5 font-light">
               Există o putere specială în a parcurge un proces de transformare
               alături de alte femei care trec prin experiențe similare.
               Vulnerabilitatea împărtășită, reflecțiile comune și energia grupului
               creează un spațiu de vindecare pe care o sesiune individuală nu-l
               poate replica.
             </p>
-            <p className="text-[15px] text-[#6B5070] leading-[1.9] font-light">
+            <p className="text-[15px] text-[#4A6858] leading-[1.9] font-light">
               Programele mele combină structura unui proces clar cu profunzimea
               lucrului interior autentic — într-un spațiu sigur, ghidat și
               susținut.
@@ -112,7 +112,7 @@ export default function ProgrameContent() {
         <div className="max-w-[1000px] mx-auto space-y-8">
           {programs.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.1}>
-              <div className="rounded-2xl bg-white overflow-hidden transition-shadow" style={{ border: "1px solid rgba(139,58,107,0.08)" }}>
+              <div className="rounded-2xl bg-white overflow-hidden transition-shadow" style={{ border: "1px solid rgba(48,104,88,0.08)" }}>
                 <div
                   className="h-[3px]"
                   style={{ background: p.accent }}
@@ -121,20 +121,20 @@ export default function ProgrameContent() {
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-3 flex-wrap">
-                        <h3 className="font-serif text-2xl text-purple-dark font-normal">
+                        <h3 className="font-serif text-2xl text-teal-dark font-normal">
                           {p.title}
                         </h3>
-                        <span className="text-[11px] px-3 py-1 rounded-full bg-pink-bg text-purple-mid font-medium">
+                        <span className="text-[11px] px-3 py-1 rounded-full bg-mint-bg text-teal-mid font-medium">
                           {p.duration}
                         </span>
-                        <span className="text-[11px] px-3 py-1 rounded-full bg-[#F5ECFE] text-purple-mid/70">
+                        <span className="text-[11px] px-3 py-1 rounded-full bg-[#E0F0E8] text-teal-mid/70">
                           {p.format}
                         </span>
                       </div>
-                      <p className="text-[14px] text-[#6B5070] leading-relaxed font-light max-w-xl mb-6">
+                      <p className="text-[14px] text-[#4A6858] leading-relaxed font-light max-w-xl mb-6">
                         {p.desc}
                       </p>
-                      <p className="text-[11px] tracking-[2px] uppercase text-purple-mid/50 mb-3">
+                      <p className="text-[11px] tracking-[2px] uppercase text-teal-mid/50 mb-3">
                         Ce include
                       </p>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -144,18 +144,18 @@ export default function ProgrameContent() {
                               className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0"
                               style={{ background: p.dot }}
                             />
-                            <p className="text-[13px] text-[#6B5070]">{inc}</p>
+                            <p className="text-[13px] text-[#4A6858]">{inc}</p>
                           </div>
                         ))}
                       </div>
                     </div>
                     <div className="flex-shrink-0 text-center md:text-right">
-                      <p className="text-[11px] text-[#B0A0B8] mb-2">
+                      <p className="text-[11px] text-[#90B0A0] mb-2">
                         Preț la cerere
                       </p>
                       <a
                         href="/contact"
-                        className="inline-block bg-[linear-gradient(135deg,#E870A0,#C050D0)] text-white px-6 py-2.5 rounded-full text-[13px] font-medium shadow-[0_4px_16px_rgba(200,80,208,0.2)] hover:-translate-y-0.5 hover:shadow-[0_6px_24px_rgba(200,80,208,0.3)] transition-all"
+                        className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-6 py-2.5 rounded-full text-[13px] font-medium shadow-[0_4px_16px_rgba(168,85,208,0.2)] hover:-translate-y-0.5 hover:shadow-[0_6px_24px_rgba(168,85,208,0.3)] transition-all"
                       >
                         Aplică acum
                       </a>
@@ -169,10 +169,10 @@ export default function ProgrameContent() {
       </section>
 
       {/* How it works */}
-      <section className="py-20 px-6 bg-gradient-to-b from-white to-pink-bg">
+      <section className="py-20 px-6 bg-gradient-to-b from-white to-mint-bg">
         <div className="max-w-[700px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-purple-dark font-normal leading-snug mb-10 text-center">
+            <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-10 text-center">
               Cum funcționează
             </h2>
           </Reveal>
@@ -180,14 +180,14 @@ export default function ProgrameContent() {
             {howItWorks.map((s, i) => (
               <Reveal key={s.step} delay={i * 0.1}>
                 <div className="flex gap-5 items-start">
-                  <span className="text-3xl font-serif text-accent-pink/30 font-normal flex-shrink-0 w-10">
+                  <span className="text-3xl font-serif text-accent-rose/30 font-normal flex-shrink-0 w-10">
                     {s.step}
                   </span>
                   <div>
-                    <h3 className="text-[15px] font-medium text-purple-dark mb-1">
+                    <h3 className="text-[15px] font-medium text-teal-dark mb-1">
                       {s.title}
                     </h3>
-                    <p className="text-[14px] text-[#6B5070] leading-relaxed font-light">
+                    <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
                       {s.desc}
                     </p>
                   </div>
@@ -199,13 +199,13 @@ export default function ProgrameContent() {
       </section>
 
       {/* Note */}
-      <section className="py-16 px-6 bg-pink-bg">
+      <section className="py-16 px-6 bg-mint-bg">
         <Reveal>
           <div className="max-w-[600px] mx-auto text-center">
-            <p className="font-serif text-xl text-purple-dark italic leading-relaxed mb-4">
+            <p className="font-serif text-xl text-teal-dark italic leading-relaxed mb-4">
               Grupurile mele sunt mici și cu locuri limitate."
             </p>
-            <p className="text-[14px] text-[#6B5070] leading-relaxed font-light">
+            <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
               Fiecare program este creat cu grijă, iar grupurile sunt formate cu
               atenție. Dacă simți că unul dintre programe este pentru tine,
               aplică iar eu te voi contacta personal.

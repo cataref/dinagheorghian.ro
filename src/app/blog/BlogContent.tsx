@@ -17,7 +17,7 @@ const placeholderPosts = [
     excerpt:
       "Doliul nu are un calendar. Nu există un moment corect în care ar trebui să te simți mai bine. Iată ce poți face pentru tine.",
     category: "Doliu",
-    color: "#C090F0",
+    color: "#78B898",
   },
   {
     title: "Ce înseamnă cu adevărat reconectarea cu tine",
@@ -37,14 +37,14 @@ export default function BlogContent() {
         subtitle="Articole despre transformare interioară, emoții, relații și reconectare cu sinele autentic."
       />
 
-      <section className="py-20 px-6 bg-gradient-to-b from-pink-bg to-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
         <div className="max-w-[900px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {placeholderPosts.map((post, i) => (
               <Reveal key={post.title} delay={i * 0.1}>
-                <article className="bg-white rounded-2xl border border-purple-bright/8 overflow-hidden hover:shadow-[0_12px_40px_rgba(139,58,107,0.06)] transition-shadow group cursor-pointer">
+                <article className="bg-white rounded-2xl border border-teal-bright/8 overflow-hidden hover:shadow-[0_12px_40px_rgba(48,104,88,0.06)] transition-shadow group cursor-pointer">
                   {/* Gradient header bar */}
-                  <div className="h-32 bg-gradient-to-br from-[#5B2D6E] to-[#8B3A6B] relative overflow-hidden">
+                  <div className="h-32 bg-gradient-to-br from-[#306858] to-[#4A8870] relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.08)_0%,transparent_60%)]" />
                   </div>
                   <div className="p-6">
@@ -54,10 +54,10 @@ export default function BlogContent() {
                     >
                       {post.category}
                     </span>
-                    <h3 className="font-serif text-lg text-purple-dark font-normal leading-snug mb-2 group-hover:text-purple-mid transition-colors">
+                    <h3 className="font-serif text-lg text-teal-dark font-normal leading-snug mb-2 group-hover:text-teal-mid transition-colors">
                       {post.title}
                     </h3>
-                    <p className="text-[13px] text-[#6B5070] leading-relaxed font-light">
+                    <p className="text-[13px] text-[#4A6858] leading-relaxed font-light">
                       {post.excerpt}
                     </p>
                   </div>
@@ -69,11 +69,11 @@ export default function BlogContent() {
           {/* Coming soon notice */}
           <Reveal delay={0.3}>
             <div className="mt-14 text-center">
-              <div className="inline-block bg-gradient-to-br from-pink-soft to-[#F5ECFE]/50 rounded-2xl px-10 py-8">
-                <p className="font-serif text-xl text-purple-dark font-normal mb-2">
+              <div className="inline-block bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50 rounded-2xl px-10 py-8">
+                <p className="font-serif text-xl text-teal-dark font-normal mb-2">
                   Mai multe articole în curând
                 </p>
-                <p className="text-[14px] text-[#6B5070] font-light">
+                <p className="text-[14px] text-[#4A6858] font-light">
                   Blogul este în construcție. Urmărește-mă pe social media pentru
                   actualizări.
                 </p>
