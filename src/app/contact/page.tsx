@@ -4,7 +4,7 @@ import ContactContent from "./ContactContent";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactează-o pe Dina Gheorghian. Programează o sesiune, aplică la un program sau pune o întrebare.",
+    "Contacteaza-o pe Dina Gheorghian. Programeaza o sesiune, aplica la un program sau pune o intrebare.",
 };
 
 export default function ContactPage() {

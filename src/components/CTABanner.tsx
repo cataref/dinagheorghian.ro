@@ -11,9 +11,9 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  title = "Ești pregătită pentru o schimbare reală?",
-  subtitle = "Primul pas este să decizi că meriți mai mult. Al doilea este să acționezi. Programează o sesiune și hai să descoperim împreună ce este posibil pentru tine.",
-  buttonText = "Programează o sesiune",
+  title = "Esti pregatita pentru o schimbare reala?",
+  subtitle = "Primul pas este sa decizi ca meriti mai mult. Al doilea este sa actionezi. Programeaza o sesiune si hai sa descoperim impreuna ce este posibil pentru tine.",
+  buttonText = "Programeaza o sesiune",
   buttonHref = "/contact",
 }: CTABannerProps) {
   return (
@@ -23,12 +23,12 @@ export default function CTABanner({
         <h2 className="font-serif text-[clamp(28px,4vw,42px)] text-white font-normal mb-4 leading-tight">
           {title}
         </h2>
-        <p className="text-white/50 text-[15px] max-w-md mx-auto leading-relaxed mb-9 font-light">
+        <p className="text-white/50 text-[16px] max-w-md mx-auto leading-relaxed mb-9 font-light">
           {subtitle}
         </p>
         <Link
           href={buttonHref}
-          className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-10 py-4 rounded-full text-[15px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
+          className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-10 py-4 rounded-full text-[16px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
         >
           {buttonText}
         </Link>

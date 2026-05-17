@@ -5,10 +5,10 @@ import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 
 const subjects = [
-  "Vreau să programez o sesiune 1:1",
-  "Sunt interesată de un program de grup",
-  "Vreau informații despre retreaturi",
-  "Vreau să comand cartea",
+  "Vreau sa programez o sesiune 1:1",
+  "Sunt interesata de un program de grup",
+  "Vreau informatii despre retreaturi",
+  "Vreau sa comand cartea",
   "Altceva",
 ];
 
@@ -31,8 +31,8 @@ export default function ContactContent() {
     <>
       <PageHeader
         label="Contact"
-        title="Hai să vorbim"
-        subtitle="Completează formularul de mai jos sau scrie-mi direct pe email. Răspund personal la fiecare mesaj."
+        title="Hai sa vorbim"
+        subtitle="Completeaza formularul de mai jos sau scrie-mi direct pe email. Raspund personal la fiecare mesaj."
       />
 
       <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
@@ -52,8 +52,8 @@ export default function ContactContent() {
                 <h3 className="font-serif text-2xl text-teal-dark font-normal mb-3">
                   Mesaj trimis!
                 </h3>
-                <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
-                  Mulțumesc! Voi reveni cu un răspuns cât mai curând posibil.
+                <p className="text-[16px] text-[#4A6858] leading-relaxed font-light">
+                  Multumesc! Voi reveni cu un raspuns cat mai curand posibil.
                 </p>
               </div>
             ) : (
@@ -63,8 +63,8 @@ export default function ContactContent() {
                 </h2>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-[12px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
-                      Numele tău
+                    <label className="block text-[13px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
+                      Numele tau
                     </label>
                     <input
                       type="text"
@@ -72,12 +72,12 @@ export default function ContactContent() {
                       onChange={(e) =>
                         setForm({ ...form, name: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[14px] text-teal-dark placeholder:text-[#A8C8B8] focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all"
+                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[16px] text-teal-dark placeholder:text-[#A8C8B8] focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all"
                       placeholder="Numele complet"
                     />
                   </div>
                   <div>
-                    <label className="block text-[12px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
+                    <label className="block text-[13px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
                       Email
                     </label>
                     <input
@@ -86,12 +86,12 @@ export default function ContactContent() {
                       onChange={(e) =>
                         setForm({ ...form, email: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[14px] text-teal-dark placeholder:text-[#A8C8B8] focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all"
+                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[16px] text-teal-dark placeholder:text-[#A8C8B8] focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all"
                       placeholder="adresa@email.ro"
                     />
                   </div>
                   <div>
-                    <label className="block text-[12px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
+                    <label className="block text-[13px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
                       Subiect
                     </label>
                     <select
@@ -99,7 +99,7 @@ export default function ContactContent() {
                       onChange={(e) =>
                         setForm({ ...form, subject: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[14px] text-teal-dark focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all appearance-none"
+                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[16px] text-teal-dark focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all appearance-none"
                     >
                       <option value="">Alege un subiect</option>
                       {subjects.map((s) => (
@@ -110,8 +110,8 @@ export default function ContactContent() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-[12px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
-                      Mesajul tău
+                    <label className="block text-[13px] text-teal-mid/60 mb-1.5 tracking-wide uppercase">
+                      Mesajul tau
                     </label>
                     <textarea
                       value={form.message}
@@ -119,13 +119,13 @@ export default function ContactContent() {
                         setForm({ ...form, message: e.target.value })
                       }
                       rows={5}
-                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[14px] text-teal-dark placeholder:text-[#A8C8B8] focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-teal-bright/12 bg-white text-[16px] text-teal-dark placeholder:text-[#A8C8B8] focus:outline-none focus:border-accent-rose/40 focus:ring-2 focus:ring-accent-rose/10 transition-all resize-none"
                       placeholder="Scrie-mi ce ai pe suflet..."
                     />
                   </div>
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white py-3.5 rounded-full text-[14px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all cursor-pointer"
+                    className="w-full bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white py-3.5 rounded-full text-[16px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all cursor-pointer"
                   >
                     Trimite mesajul
                   </button>
@@ -143,7 +143,7 @@ export default function ContactContent() {
                 </h3>
                 <a
                   href="mailto:contact@dinagheorghian.ro"
-                  className="text-[14px] text-accent-rose hover:underline"
+                  className="text-[16px] text-accent-rose hover:underline"
                 >
                   contact@dinagheorghian.ro
                 </a>
@@ -183,11 +183,11 @@ export default function ContactContent() {
 
               <div className="bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50 rounded-2xl p-7">
                 <h3 className="font-serif text-lg text-teal-dark font-normal mb-3">
-                  Timp de răspuns
+                  Timp de raspuns
                 </h3>
-                <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
-                  Răspund de obicei în 24-48 de ore. Dacă dorești o programare
-                  urgentă, menționează asta în mesaj.
+                <p className="text-[16px] text-[#4A6858] leading-relaxed font-light">
+                  Raspund de obicei in 24-48 de ore. Daca doresti o programare
+                  urgenta, mentioneaza asta in mesaj.
                 </p>
               </div>
 
@@ -195,9 +195,9 @@ export default function ContactContent() {
                 <h3 className="font-serif text-lg text-teal-dark font-normal mb-3">
                   Sesiuni online
                 </h3>
-                <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
-                  Toate sesiunile se desfășoară online prin Zoom. Vei primi
-                  link-ul de conectare după confirmarea programării.
+                <p className="text-[16px] text-[#4A6858] leading-relaxed font-light">
+                  Toate sesiunile se desfasoara online prin Zoom. Vei primi
+                  link-ul de conectare dupa confirmarea programarii.
                 </p>
               </div>
             </div>

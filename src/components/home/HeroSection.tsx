@@ -20,7 +20,7 @@ export default function HeroSection() {
             className="text-[13px] tracking-[3.5px] uppercase font-medium mb-4"
             style={{ color: "#D4C088" }}
           >
-            Ghid transformațional · Coach
+            Ghid transformational · Coach
           </motion.p>
 
           <motion.h1
@@ -29,7 +29,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="font-serif text-[clamp(38px,5vw,58px)] text-white font-normal leading-[1.15]"
           >
-            Reconectează-te
+            Reconecteaza-te
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-serif text-[clamp(38px,5vw,58px)] font-normal leading-[1.15]"
           >
-            <span className="gradient-text">cu tine însăți</span>
+            <span className="gradient-text">cu tine insati</span>
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-serif text-[clamp(38px,5vw,58px)] text-white font-normal leading-[1.15]"
           >
-            și transformă-ți viața.
+            si transforma-ti viata.
           </motion.h1>
 
           <motion.p
@@ -55,8 +55,8 @@ export default function HeroSection() {
             className="text-[16.5px] leading-relaxed max-w-[440px] mx-auto lg:mx-0 mt-6 mb-8 font-light"
             style={{ color: "rgba(255,255,255,0.6)" }}
           >
-            Sesiuni de transformare interioară, eliberare emoțională și
-            reconectare cu sinele autentic. Un spațiu sigur pentru sufletul tău.
+            Sesiuni de transformare interioara, eliberare emotionala si
+            reconectare cu sinele autentic. Un spatiu sigur pentru sufletul tau.
           </motion.p>
 
           <motion.div
@@ -67,17 +67,17 @@ export default function HeroSection() {
           >
             <Link
               href="/contact"
-              className="text-white px-9 py-4 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all"
+              className="text-white px-9 py-4 rounded-full text-[16px] font-medium hover:-translate-y-0.5 transition-all"
               style={{ background: "linear-gradient(135deg, #E870A0, #A855D0)", boxShadow: "0 6px 24px rgba(168,85,208,0.3)" }}
             >
-              Programează o sesiune
+              Programeaza o sesiune
             </Link>
             <Link
               href="/programe"
-              className="text-white px-8 py-4 rounded-full text-[15px] hover:bg-white/12 transition-all"
+              className="text-white px-8 py-4 rounded-full text-[16px] hover:bg-white/12 transition-all"
               style={{ border: "1px solid rgba(255,255,255,0.25)", background: "rgba(255,255,255,0.05)", backdropFilter: "blur(8px)" }}
             >
-              Descoperă programele
+              Descopera programele
             </Link>
           </motion.div>
         </div>
@@ -100,7 +100,7 @@ export default function HeroSection() {
 
           {/* Floating badges */}
           <div className="absolute -top-2 -right-5 glass rounded-xl px-4 py-3 z-20 animate-[float_6s_ease-in-out_infinite]">
-            <p className="text-[10px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
+            <p className="text-[11px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
               Autoare
             </p>
             <p className="text-[13px] text-white font-medium">De ce eu?</p>
@@ -113,8 +113,8 @@ export default function HeroSection() {
           </div>
 
           <div className="absolute bottom-2 -left-8 glass rounded-xl px-4 py-3 z-20 animate-[float_6s_ease-in-out_2s_infinite]">
-            <p className="text-[10px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
-              Experiență
+            <p className="text-[11px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
+              Experienta
             </p>
             <p className="text-[13px] text-white font-medium">
               Psihologie · Coaching

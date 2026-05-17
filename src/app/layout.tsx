@@ -5,25 +5,25 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Dina Gheorghian · Ghid Transformațional",
+    default: "Dina Gheorghian · Ghid Transformational",
     template: "%s | Dina Gheorghian",
   },
   description:
-    "Ghid transformațional și coach în psihologie transcendentă. Sesiuni 1:1, programe de grup, retreaturi și resurse pentru transformare interioară profundă.",
+    "Ghid transformational si coach in psihologie transcendenta. Sesiuni 1:1, programe de grup, retreaturi si resurse pentru transformare interioara profunda.",
   keywords: [
-    "transformare interioară",
-    "psihologie transcendentă",
+    "transformare interioara",
+    "psihologie transcendenta",
     "coaching",
-    "eliberare emoțională",
+    "eliberare emotionala",
     "doliu",
     "reconectare",
-    "dezvoltare personală",
+    "dezvoltare personala",
     "Dina Gheorghian",
   ],
   openGraph: {
-    title: "Dina Gheorghian · Ghid Transformațional",
+    title: "Dina Gheorghian · Ghid Transformational",
     description:
-      "Reconectează-te cu tine însăți și transformă-ți viața. Sesiuni de transformare interioară, eliberare emoțională și reconectare cu sinele autentic.",
+      "Reconecteaza-te cu tine insati si transforma-ti viata. Sesiuni de transformare interioara, eliberare emotionala si reconectare cu sinele autentic.",
     locale: "ro_RO",
     type: "website",
   },

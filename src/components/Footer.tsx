@@ -20,14 +20,14 @@ export default function Footer() {
               Dina Gheorghian
             </Link>
             <p className="text-white/35 text-sm mt-3 leading-relaxed max-w-[280px]">
-              Ghid transformațional și coach în psihologie transcendentă.
+              Ghid transformational si coach in psihologie transcendenta.
               Reconectare cu sinele autentic.
             </p>
           </div>
 
           {/* Nav */}
           <div>
-            <p className="text-[10px] uppercase tracking-[3px] text-white/30 mb-4">
+            <p className="text-[11px] uppercase tracking-[3px] text-white/30 mb-4">
               Navigare
             </p>
             <div className="flex flex-col gap-2.5">
@@ -45,7 +45,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-[10px] uppercase tracking-[3px] text-white/30 mb-4">
+            <p className="text-[11px] uppercase tracking-[3px] text-white/30 mb-4">
               Contact
             </p>
             <a

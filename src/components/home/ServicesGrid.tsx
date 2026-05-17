@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 const services = [
   {
     title: "Sesiuni 1:1",
-    desc: "Lucru individual profund, adaptat ție și procesului tău interior",
+    desc: "Lucru individual profund, adaptat tie si procesului tau interior",
     href: "/sesiuni",
     barColor: "linear-gradient(90deg, #E870A0, #D4C088)",
     iconBg: "linear-gradient(135deg, #E870A0, #C87850)",
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Programe de grup",
-    desc: "Transformare structurată pe etape, cu suport și comunitate",
+    desc: "Transformare structurata pe etape, cu suport si comunitate",
     href: "/programe",
     barColor: "linear-gradient(90deg, #60C8A8, #80F0D0)",
     iconBg: "linear-gradient(135deg, #50B898, #38A080)",
@@ -26,7 +26,7 @@ const services = [
   },
   {
     title: "Retreaturi",
-    desc: "Experiențe imersive de reconectare interioară în natură",
+    desc: "Experiente imersive de reconectare interioara in natura",
     href: "/retreaturi",
     barColor: "linear-gradient(90deg, #A8D0B8, #78C8A0)",
     iconBg: "linear-gradient(135deg, #78B898, #508878)",
@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "Cartea",
-    desc: "De ce eu? \u2014 un ghid sincer pentru sufletul tău",
+    desc: "De ce eu? — un ghid sincer pentru sufletul tau",
     href: "/cartea",
     barColor: "linear-gradient(90deg, #F0C840, #F8E080)",
     iconBg: "linear-gradient(135deg, #E8B830, #D0A020)",
@@ -80,7 +80,7 @@ export default function ServicesGrid() {
               <h3 className="text-[16px] font-semibold text-white mb-2">
                 {s.title}
               </h3>
-              <p className="text-[14px] leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
+              <p className="text-[16px] leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
                 {s.desc}
               </p>
             </Link>

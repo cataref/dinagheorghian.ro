@@ -6,64 +6,64 @@ import Reveal from "@/components/Reveal";
 import CTABanner from "@/components/CTABanner";
 
 const methods = [
-  "Psihologie integrativă și holistică",
-  "Explorarea experiențelor de viață și a emoțiilor care îți ghidează realitatea",
-  "Tehnici de eliberare și vindecare emoțională",
+  "Psihologie integrativa si holistica",
+  "Explorarea experientelor de viata si a emotiilor care iti ghideaza realitatea",
+  "Tehnici de eliberare si vindecare emotionala",
   "Tehnici ghidate personalizate",
 ];
 
 const forYou = [
-  "Te simți blocat emoțional sau interior",
-  "Treci printr-o perioadă de pierdere sau schimbare",
-  "Repeți aceleași tipare în relații sau viață",
-  "Simți confuzie, gol interior sau lipsă de direcție",
-  "Vrei să te reconectezi cu tine, cu sufletul tău",
-  "Vrei să înveți să îți controlezi mintea și gândurile",
+  "Te simti blocat emotional sau interior",
+  "Treci printr-o perioada de pierdere sau schimbare",
+  "Repeti aceleasi tipare in relatii sau viata",
+  "Simti confuzie, gol interior sau lipsa de directie",
+  "Vrei sa te reconectezi cu tine, cu sufletul tau",
+  "Vrei sa inveti sa iti controlezi mintea si gandurile",
 ];
 
 const outcomes = [
-  "Mai multă claritate interioară",
-  "Eliberare emoțională și de durerile trecutului",
-  "Înțelegerea profundă a propriei vieți",
-  "Conectare cu sufletul tău",
-  "Găsirea direcției și a misiunii sufletului tău",
-  "Crearea propriei tale realități",
-  "Liniște și stabilitate interioară",
+  "Mai multa claritate interioara",
+  "Eliberare emotionala si de durerile trecutului",
+  "Intelegerea profunda a propriei vieti",
+  "Conectare cu sufletul tau",
+  "Gasirea directiei si a misiunii sufletului tau",
+  "Crearea propriei tale realitati",
+  "Liniste si stabilitate interioara",
 ];
 
 const tiers = [
   {
     name: "Claritate & explorare",
     sub: "1 sesiune · 60 min",
-    desc: "Pentru persoane care vor să înceapă procesul sau au o situație punctuală.",
+    desc: "Pentru persoane care vor sa inceapa procesul sau au o situatie punctuala.",
     price: 250,
     features: [
-      "Lucru personalizat pe situația ta",
-      "Direcții clare + integrare emoțională",
+      "Lucru personalizat pe situatia ta",
+      "Directii clare + integrare emotionala",
     ],
     featured: false,
   },
   {
     name: "Pachet transformare",
     sub: "3 sesiuni · proces structurat",
-    desc: "Pentru schimbări reale, nu doar insight-uri.",
+    desc: "Pentru schimbari reale, nu doar insight-uri.",
     price: 500,
     features: [
       "Proces structurat pe etape",
-      "Integrare între sesiuni",
-      "Lucru profund pe tipare emoționale",
+      "Integrare intre sesiuni",
+      "Lucru profund pe tipare emotionale",
     ],
     featured: true,
   },
   {
-    name: "Transformare profundă",
-    sub: "5 sesiuni · meditații incluse",
-    desc: "Pentru procese de viață intense sau transformare majoră.",
+    name: "Transformare profunda",
+    sub: "5 sesiuni · meditatii incluse",
+    desc: "Pentru procese de viata intense sau transformare majora.",
     price: 800,
     features: [
-      "Lucru aprofundat pe istorie personală",
-      "Meditații ghidate personalizate între sesiuni",
-      "Susținere continuă în proces",
+      "Lucru aprofundat pe istorie personala",
+      "Meditatii ghidate personalizate intre sesiuni",
+      "Sustinere continua in proces",
     ],
     featured: false,
   },
@@ -74,8 +74,8 @@ export default function SesiuniContent() {
     <>
       <PageHeader
         label="Sesiuni 1:1 Online"
-        title="Spațiu de lucru profund individual"
-        subtitle="O sesiune dedicată în întregime ție, procesului tău interior și momentului de viață în care te afli."
+        title="Spatiu de lucru profund individual"
+        subtitle="O sesiune dedicata in intregime tie, procesului tau interior si momentului de viata in care te afli."
       />
 
       {/* How we work */}
@@ -83,11 +83,11 @@ export default function SesiuniContent() {
         <div className="max-w-[700px] mx-auto">
           <Reveal>
             <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-4">
-              Cum lucrăm
+              Cum lucram
             </h2>
-            <p className="text-[15px] text-[#4A6858] leading-relaxed mb-8 font-light">
-              Nu este o discuție generală, ci un spațiu de explorare profundă, în
-              care lucrăm cu emoțiile, convingerile și experiențele tale de viață.
+            <p className="text-[16px] text-[#4A6858] leading-relaxed mb-8 font-light">
+              Nu este o discutie generala, ci un spatiu de explorare profunda, in
+              care lucram cu emotiile, convingerile si experientele tale de viata.
             </p>
           </Reveal>
           <div className="space-y-3">
@@ -109,7 +109,7 @@ export default function SesiuniContent() {
           <div>
             <Reveal>
               <h2 className="font-serif text-[clamp(22px,2.5vw,30px)] text-teal-dark font-normal leading-snug mb-6">
-                Acest spațiu este pentru tine dacă…
+                Acest spatiu este pentru tine daca…
               </h2>
             </Reveal>
             <div className="space-y-3">
@@ -117,7 +117,7 @@ export default function SesiuniContent() {
                 <Reveal key={f} delay={i * 0.06}>
                   <div className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent-teal mt-2 flex-shrink-0" />
-                    <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
+                    <p className="text-[16px] text-[#4A6858] leading-relaxed font-light">
                       {f}
                     </p>
                   </div>
@@ -129,7 +129,7 @@ export default function SesiuniContent() {
           <div>
             <Reveal>
               <h2 className="font-serif text-[clamp(22px,2.5vw,30px)] text-teal-dark font-normal leading-snug mb-6">
-                Ce se schimbă prin acest proces
+                Ce se schimba prin acest proces
               </h2>
             </Reveal>
             <div className="space-y-3">
@@ -137,7 +137,7 @@ export default function SesiuniContent() {
                 <Reveal key={o} delay={i * 0.06}>
                   <div className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent-lavender mt-2 flex-shrink-0" />
-                    <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
+                    <p className="text-[16px] text-[#4A6858] leading-relaxed font-light">
                       {o}
                     </p>
                   </div>
@@ -152,13 +152,13 @@ export default function SesiuniContent() {
       <section className="py-12 px-6 bg-gradient-to-b from-white to-mint-bg">
         <Reveal>
           <div className="max-w-[500px] mx-auto bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50 rounded-2xl p-8 text-center">
-            <p className="text-[11px] tracking-[2px] uppercase text-teal-mid/60 mb-4">
-              Modul de desfășurare
+            <p className="text-[12px] tracking-[2px] uppercase text-teal-mid/60 mb-4">
+              Modul de desfasurare
             </p>
             <div className="space-y-2 text-sm text-[#4A6858]">
               <p>Sesiuni online (Zoom)</p>
-              <p>Durată: 60 minute</p>
-              <p>Proces personalizat, adaptat în timp real</p>
+              <p>Durata: 60 minute</p>
+              <p>Proces personalizat, adaptat in timp real</p>
             </div>
           </div>
         </Reveal>
@@ -167,8 +167,8 @@ export default function SesiuniContent() {
       {/* Pricing */}
       <section className="py-20 px-6 bg-mint-bg">
         <div className="text-center mb-12">
-          <p className="text-[11px] tracking-[3px] uppercase text-teal-mid font-medium mb-3.5">
-            Prețuri & Pachete
+          <p className="text-[12px] tracking-[3px] uppercase text-teal-mid font-medium mb-3.5">
+            Preturi & Pachete
           </p>
           <h2 className="font-serif text-[clamp(28px,3vw,38px)] text-teal-dark font-normal">
             Alege formatul potrivit pentru tine
@@ -186,7 +186,7 @@ export default function SesiuniContent() {
                 }`}
               >
                 {t.featured && (
-                  <span className="inline-block text-[#5B3A00] text-[10px] font-semibold px-3.5 py-1 rounded-xl mb-3" style={{ background: "linear-gradient(135deg, #F0D060, #E8B830)" }}>
+                  <span className="inline-block text-[#5B3A00] text-[11px] font-semibold px-3.5 py-1 rounded-xl mb-3" style={{ background: "linear-gradient(135deg, #F0D060, #E8B830)" }}>
                     Recomandat
                   </span>
                 )}
@@ -253,7 +253,7 @@ export default function SesiuniContent() {
                       : "border-[1.5px] border-[#A8D0B8] text-teal-mid hover:border-teal-mid"
                   }`}
                 >
-                  Programează
+                  Programeaza
                 </Link>
               </div>
             </Reveal>
@@ -266,11 +266,11 @@ export default function SesiuniContent() {
         <Reveal>
           <div className="max-w-[600px] mx-auto text-center">
             <p className="font-serif text-xl text-teal-dark italic leading-relaxed mb-4">
-              Acest proces nu este despre sfaturi rapide sau soluții externe."
+              Acest proces nu este despre sfaturi rapide sau solutii externe."
             </p>
-            <p className="text-[14px] text-[#4A6858] leading-relaxed font-light">
-              Este un spațiu de lucru interior profund, în care te întorci către
-              tine și începi să înțelegi ceea ce se întâmplă în interiorul tău la
+            <p className="text-[16px] text-[#4A6858] leading-relaxed font-light">
+              Este un spatiu de lucru interior profund, in care te intorci catre
+              tine si incepi sa intelegi ceea ce se intampla in interiorul tau la
               un nivel mai profund.
             </p>
           </div>
@@ -278,9 +278,9 @@ export default function SesiuniContent() {
       </section>
 
       <CTABanner
-        title="Simți că este momentul?"
-        subtitle="Programează o sesiune și hai să descoperim împreună ce este posibil pentru tine."
-        buttonText="Programează o sesiune"
+        title="Simti ca este momentul?"
+        subtitle="Programeaza o sesiune si hai sa descoperim impreuna ce este posibil pentru tine."
+        buttonText="Programeaza o sesiune"
       />
     </>
   );

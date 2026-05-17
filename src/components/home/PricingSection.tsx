@@ -31,7 +31,7 @@ export default function PricingSection() {
   return (
     <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
       <div className="text-center mb-12">
-        <p className="text-[11px] tracking-[3px] uppercase font-medium mb-3.5" style={{ color: "#306858" }}>
+        <p className="text-[12px] tracking-[3px] uppercase font-medium mb-3.5" style={{ color: "#306858" }}>
           Pachete sesiuni 1:1
         </p>
         <h2 className="font-serif text-[clamp(28px,3vw,38px)] font-normal" style={{ color: "#264540" }}>
@@ -62,7 +62,7 @@ export default function PricingSection() {
               />
               {t.featured && (
                 <span
-                  className="inline-block text-[10px] font-semibold px-3.5 py-1 rounded-xl mb-3.5"
+                  className="inline-block text-[11px] font-semibold px-3.5 py-1 rounded-xl mb-3.5"
                   style={{
                     background: "linear-gradient(135deg, #F0D060, #E8B830)",
                     color: "#5B3A00",

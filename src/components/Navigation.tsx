@@ -74,7 +74,7 @@ export default function Navigation() {
             <div key={link.href} className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className={`text-[13.5px] transition-colors flex items-center gap-1 ${
+                className={`text-[16px] transition-colors flex items-center gap-1 ${
                   pathname.startsWith("/retreaturi")
                     ? "text-white"
                     : "text-white/60 hover:text-white"
@@ -129,7 +129,7 @@ export default function Navigation() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-[13.5px] transition-colors ${
+              className={`text-[16px] transition-colors ${
                 pathname === link.href
                   ? "text-white"
                   : "text-white/60 hover:text-white"
@@ -141,7 +141,7 @@ export default function Navigation() {
         )}
         <Link
           href="/contact"
-          className="glass text-white text-[12.5px] font-medium px-5 py-2 rounded-full hover:bg-white/20 transition-colors"
+          className="glass text-white text-[14px] font-medium px-5 py-2 rounded-full hover:bg-white/20 transition-colors"
         >
           Contul meu
         </Link>
@@ -183,7 +183,7 @@ export default function Navigation() {
             <button
               onClick={() => setOpen(false)}
               className="absolute top-5 right-6 text-white text-2xl"
-              aria-label="Închide"
+              aria-label="Inchide"
             >
               ✕
             </button>
@@ -226,7 +226,7 @@ export default function Navigation() {
                             key={child.href}
                             href={child.href}
                             onClick={() => setOpen(false)}
-                            className="text-[15px] text-white/60 hover:text-white transition-colors"
+                            className="text-[16px] text-white/60 hover:text-white transition-colors"
                           >
                             {child.label}
                           </Link>

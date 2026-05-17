@@ -4,7 +4,7 @@ import DespreContent from "./DespreContent";
 export const metadata: Metadata = {
   title: "Despre mine",
   description:
-    "Povestea Dinei Gheorghian — cum am transformat durerea în misiune. Ghid transformațional și coach în psihologie transcendentă.",
+    "Povestea Dinei Gheorghian — cum am transformat durerea in misiune. Ghid transformational si coach in psihologie transcendenta.",
 };
 
 export default function DesprePage() {

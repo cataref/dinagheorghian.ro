@@ -5,21 +5,21 @@ import Reveal from "@/components/Reveal";
 import CTABanner from "@/components/CTABanner";
 
 const forYou = [
-  "Treci printr-o perioadă de doliu sau pierdere",
-  "Ai trecut printr-o despărțire și simți durere profundă",
-  "Cauți sens într-o experiență dureroasă de viață",
-  "Vrei să înțelegi procesul de vindecare emoțională",
-  "Ești în căutarea ta de sine și vrei un ghid sincer",
-  "Vrei să ajuți pe cineva care trece prin doliu",
+  "Treci printr-o perioada de doliu sau pierdere",
+  "Ai trecut printr-o despartire si simti durere profunda",
+  "Cauti sens intr-o experienta dureroasa de viata",
+  "Vrei sa intelegi procesul de vindecare emotionala",
+  "Esti in cautarea ta de sine si vrei un ghid sincer",
+  "Vrei sa ajuti pe cineva care trece prin doliu",
 ];
 
 const chapters = [
-  "Povestea — cum s-a schimbat totul într-o clipă",
-  "Durerea — ce se întâmplă când viața se oprește",
-  "Confruntarea — întâlnirea cu realitatea",
-  "Alegerea — momentul în care decizi să mergi înainte",
+  "Povestea — cum s-a schimbat totul intr-o clipa",
+  "Durerea — ce se intampla cand viata se opreste",
+  "Confruntarea — intalnirea cu realitatea",
+  "Alegerea — momentul in care decizi sa mergi inainte",
   "Transformarea — cum durerea devine putere",
-  "Reconectarea — drumul înapoi spre tine",
+  "Reconectarea — drumul inapoi spre tine",
 ];
 
 export default function CarteaContent() {
@@ -28,7 +28,7 @@ export default function CarteaContent() {
       <PageHeader
         label="Cartea"
         title="De ce eu?"
-        subtitle="Povestea mea de doliu, ghid pentru sufletul tău."
+        subtitle="Povestea mea de doliu, ghid pentru sufletul tau."
       />
 
       {/* Book hero with cover */}
@@ -40,10 +40,10 @@ export default function CarteaContent() {
               <p className="font-serif text-2xl text-white font-normal leading-snug mb-2">
                 De ce eu?
               </p>
-              <p className="text-[11px] text-white/50 tracking-wide uppercase mb-1">
+              <p className="text-[12px] text-white/50 tracking-wide uppercase mb-1">
                 Povestea mea de doliu
               </p>
-              <p className="text-[11px] text-white/50 tracking-wide uppercase">
+              <p className="text-[12px] text-white/50 tracking-wide uppercase">
                 Dina Gheorghian
               </p>
             </div>
@@ -51,21 +51,21 @@ export default function CarteaContent() {
 
           {/* Description */}
           <Reveal delay={0.15} className="flex-1 text-center md:text-left">
-            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-5 font-light">
-              De ce eu?" este o carte născută dintr-o experiență reală de
-              pierdere și transformare profundă. Nu este o carte de dezvoltare
-              personală clasică. Este o carte scrisă din suflet, pentru sufletul
-              tău.
+            <p className="text-[16px] text-[#4A6858] leading-[1.9] mb-5 font-light">
+              De ce eu?" este o carte nascuta dintr-o experienta reala de
+              pierdere si transformare profunda. Nu este o carte de dezvoltare
+              personala clasica. Este o carte scrisa din suflet, pentru sufletul
+              tau.
             </p>
-            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-5 font-light">
-              Nu îți arăt cum să mergi mai departe". Îți arăt cum poți merge
-              mai departe fără să te pierzi pe tine. Cum poți traversa durerea
-              fără să o eviți, cum poți transforma suferința într-o cale de
-              creștere autentică.
+            <p className="text-[16px] text-[#4A6858] leading-[1.9] mb-5 font-light">
+              Nu iti arat cum sa mergi mai departe". Iti arat cum poti merge
+              mai departe fara sa te pierzi pe tine. Cum poti traversa durerea
+              fara sa o eviti, cum poti transforma suferinta intr-o cale de
+              crestere autentica.
             </p>
-            <p className="text-[15px] text-[#4A6858] leading-[1.9] mb-6 font-light">
-              Această carte este povestea mea — dar și ghidul pe care aș fi vrut
-              să-l am în cele mai grele momente ale vieții mele.
+            <p className="text-[16px] text-[#4A6858] leading-[1.9] mb-6 font-light">
+              Aceasta carte este povestea mea — dar si ghidul pe care as fi vrut
+              sa-l am in cele mai grele momente ale vietii mele.
             </p>
             <div className="flex items-center gap-6 justify-center md:justify-start">
               <p className="font-serif text-4xl text-teal-mid">
@@ -76,7 +76,7 @@ export default function CarteaContent() {
                 href="#"
                 className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-8 py-3.5 rounded-full text-sm font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
               >
-                Comandă cartea
+                Comanda cartea
               </a>
             </div>
           </Reveal>
@@ -88,7 +88,7 @@ export default function CarteaContent() {
         <div className="max-w-[600px] mx-auto">
           <Reveal>
             <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-8 text-center">
-              Această carte este pentru tine dacă…
+              Aceasta carte este pentru tine daca…
             </h2>
           </Reveal>
           <div className="space-y-3">
@@ -96,7 +96,7 @@ export default function CarteaContent() {
               <Reveal key={item} delay={i * 0.06}>
                 <div className="flex items-start gap-3.5 p-4 rounded-xl bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50">
                   <span className="w-2 h-2 rounded-full bg-accent-rose mt-1.5 flex-shrink-0" />
-                  <p className="text-[14px] text-[#3A5848]">{item}</p>
+                  <p className="text-[16px] text-[#3A5848]">{item}</p>
                 </div>
               </Reveal>
             ))}
@@ -109,7 +109,7 @@ export default function CarteaContent() {
         <div className="max-w-[600px] mx-auto">
           <Reveal>
             <h2 className="font-serif text-[clamp(24px,3vw,34px)] text-teal-dark font-normal leading-snug mb-8 text-center">
-              Ce vei găsi înăuntru
+              Ce vei gasi inauntru
             </h2>
           </Reveal>
           <div className="space-y-4">
@@ -119,7 +119,7 @@ export default function CarteaContent() {
                   <span className="text-2xl font-serif text-accent-lavender/40 flex-shrink-0 w-8 text-right">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <p className="text-[14px] text-[#3A5848] font-light">{ch}</p>
+                  <p className="text-[16px] text-[#3A5848] font-light">{ch}</p>
                 </div>
               </Reveal>
             ))}
@@ -135,9 +135,9 @@ export default function CarteaContent() {
               &ldquo;
             </span>
             <p className="font-serif text-[17px] text-teal-mid leading-relaxed italic mb-4 relative z-10">
-              Am citit cartea dintr-o suflare. Am plâns, dar nu de tristețe — de
-              recunoaștere. Am simțit că cineva, în sfârșit, a pus în cuvinte
-              ceea ce eu nu am reușit.
+              Am citit cartea dintr-o suflare. Am plans, dar nu de tristete — de
+              recunoastere. Am simtit ca cineva, in sfarsit, a pus in cuvinte
+              ceea ce eu nu am reusit.
             </p>
             <p className="text-xs text-[#78A890]">— Andreea, cititoare</p>
           </div>
@@ -152,23 +152,23 @@ export default function CarteaContent() {
               58{" "}
               <span className="text-base text-[#88A898] font-sans">RON</span>
             </p>
-            <p className="text-[14px] text-[#4A6858] leading-relaxed font-light mb-6">
-              Disponibilă în format fizic. Livrare în toată România.
+            <p className="text-[16px] text-[#4A6858] leading-relaxed font-light mb-6">
+              Disponibila in format fizic. Livrare in toata Romania.
             </p>
             <a
               href="#"
-              className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-10 py-4 rounded-full text-[15px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
+              className="inline-block bg-[linear-gradient(135deg,#E870A0,#A855D0)] text-white px-10 py-4 rounded-full text-[16px] font-medium shadow-[0_6px_24px_rgba(168,85,208,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(168,85,208,0.4)] transition-all"
             >
-              Comandă cartea
+              Comanda cartea
             </a>
           </div>
         </Reveal>
       </section>
 
       <CTABanner
-        title="Vrei să vorbim?"
-        subtitle="Dacă ai citit cartea și simți că ai nevoie de suport, programează o sesiune și hai să lucrăm împreună."
-        buttonText="Programează o sesiune"
+        title="Vrei sa vorbim?"
+        subtitle="Daca ai citit cartea si simti ca ai nevoie de suport, programeaza o sesiune si hai sa lucram impreuna."
+        buttonText="Programeaza o sesiune"
       />
     </>
   );

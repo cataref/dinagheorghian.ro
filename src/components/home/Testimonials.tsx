@@ -11,9 +11,9 @@ export default function Testimonials() {
             &ldquo;
           </span>
           <p className="font-serif text-[17px] text-teal-mid leading-relaxed italic mb-4 relative z-10">
-            Sunt foarte recunoscătoare Dinei, pentru felul în care m-a ajutat să
-            văd lucrurile diferit. Simt că mi-a deschis mintea și m-a ajutat să
-            mă înțeleg mai bine pe mine și situațiile prin care trec.
+            Sunt foarte recunoscatoare Dinei, pentru felul in care m-a ajutat sa
+            vad lucrurile diferit. Simt ca mi-a deschis mintea si m-a ajutat sa
+            ma inteleg mai bine pe mine si situatiile prin care trec.
           </p>
           <p className="text-xs text-[#78A890]">— Diana, 40 de ani</p>
         </div>

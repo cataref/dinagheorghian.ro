@@ -6,23 +6,23 @@ import CTABanner from "@/components/CTABanner";
 
 const placeholderPosts = [
   {
-    title: "De ce durerea emoțională nu dispare dacă o ignori",
+    title: "De ce durerea emotionala nu dispare daca o ignori",
     excerpt:
-      "Mulți oameni cred că dacă nu se gândesc la durere, aceasta va dispare. În realitate, emoțiile neexprimate nu dispar — se acumulează.",
-    category: "Emoții",
+      "Multi oameni cred ca daca nu se gandesc la durere, aceasta va dispare. In realitate, emotiile neexprimate nu dispar — se acumuleaza.",
+    category: "Emotii",
     color: "#E870A0",
   },
   {
-    title: "Cum să traversezi o perioadă de doliu",
+    title: "Cum sa traversezi o perioada de doliu",
     excerpt:
-      "Doliul nu are un calendar. Nu există un moment corect în care ar trebui să te simți mai bine. Iată ce poți face pentru tine.",
+      "Doliul nu are un calendar. Nu exista un moment corect in care ar trebui sa te simti mai bine. Iata ce poti face pentru tine.",
     category: "Doliu",
     color: "#78B898",
   },
   {
-    title: "Ce înseamnă cu adevărat reconectarea cu tine",
+    title: "Ce inseamna cu adevarat reconectarea cu tine",
     excerpt:
-      "Reconectarea cu tine nu este un concept abstract. Este un proces real, cu etape concrete, pe care îl poți parcurge conștient.",
+      "Reconectarea cu tine nu este un concept abstract. Este un proces real, cu etape concrete, pe care il poti parcurge constient.",
     category: "Transformare",
     color: "#60C8A8",
   },
@@ -33,8 +33,8 @@ export default function BlogContent() {
     <>
       <PageHeader
         label="Blog & Resurse"
-        title="Gânduri, reflecții și ghiduri"
-        subtitle="Articole despre transformare interioară, emoții, relații și reconectare cu sinele autentic."
+        title="Ganduri, reflectii si ghiduri"
+        subtitle="Articole despre transformare interioara, emotii, relatii si reconectare cu sinele autentic."
       />
 
       <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
@@ -49,7 +49,7 @@ export default function BlogContent() {
                   </div>
                   <div className="p-6">
                     <span
-                      className="inline-block text-[10px] text-white px-2.5 py-0.5 rounded-full font-medium mb-3"
+                      className="inline-block text-[11px] text-white px-2.5 py-0.5 rounded-full font-medium mb-3"
                       style={{ background: post.color }}
                     >
                       {post.category}
@@ -71,11 +71,11 @@ export default function BlogContent() {
             <div className="mt-14 text-center">
               <div className="inline-block bg-gradient-to-br from-mint-soft to-[#E0F0E8]/50 rounded-2xl px-10 py-8">
                 <p className="font-serif text-xl text-teal-dark font-normal mb-2">
-                  Mai multe articole în curând
+                  Mai multe articole in curand
                 </p>
-                <p className="text-[14px] text-[#4A6858] font-light">
-                  Blogul este în construcție. Urmărește-mă pe social media pentru
-                  actualizări.
+                <p className="text-[16px] text-[#4A6858] font-light">
+                  Blogul este in constructie. Urmareste-ma pe social media pentru
+                  actualizari.
                 </p>
               </div>
             </div>
@@ -84,8 +84,8 @@ export default function BlogContent() {
       </section>
 
       <CTABanner
-        title="Vrei să lucrăm împreună?"
-        subtitle="Dacă un articol ți-a rezonat, poate este momentul să facem un pas mai departe."
+        title="Vrei sa lucram impreuna?"
+        subtitle="Daca un articol ti-a rezonat, poate este momentul sa facem un pas mai departe."
       />
     </>
   );

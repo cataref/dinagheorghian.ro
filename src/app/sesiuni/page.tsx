@@ -4,7 +4,7 @@ import SesiuniContent from "./SesiuniContent";
 export const metadata: Metadata = {
   title: "Sesiuni 1:1 Online",
   description:
-    "Sesiuni individuale de transformare interioară cu Dina Gheorghian. Lucru profund cu emoțiile, convingerile și experiențele tale de viață.",
+    "Sesiuni individuale de transformare interioara cu Dina Gheorghian. Lucru profund cu emotiile, convingerile si experientele tale de viata.",
 };
 
 export default function SesiuniPage() {
