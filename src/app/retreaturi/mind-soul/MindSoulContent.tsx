@@ -179,6 +179,24 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
   );
 }
 
+
+function CTABar() {
+  const whatsappUrl = "https://wa.me/40731196603?text=Buna%2C%20vreau%20detalii%20pentru%20retreatul%20Mind%20Soul";
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeEob2Gczz3TvNS3r7OVwInZodExjWs6mb7UlW9ZdNVlFkXcw/viewform";
+  return (
+    <div className="py-8 px-6">
+      <div className="max-w-[700px] mx-auto flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <a href={formUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white px-7 py-3 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #E870A0, #A855D0)", boxShadow: "0 6px 20px rgba(168,85,208,0.25)" }}>Inscrie-te acum</a>
+        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white px-7 py-3 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #25D366, #128C7E)", boxShadow: "0 6px 20px rgba(37,211,102,0.25)" }}>
+          <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="#pricing" className="inline-flex items-center gap-2 text-white px-7 py-3 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #D4B060, #B8943E)", boxShadow: "0 6px 20px rgba(212,176,96,0.25)" }}>Oferta Early Booking</a>
+      </div>
+    </div>
+  );
+}
+
 export default function MindSoulContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
@@ -214,11 +232,13 @@ export default function MindSoulContent() {
         </div>
       </section>
 
+      <CTABar />
+
       {/* What is this retreat */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-6" style={{ color: "#264540" }}>Ce este acest Retreat?</h2>
+            <h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-6" style={{ color: "#264540" }}>Ce este acest Retreat?</h2>
             <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#4A6858" }}>
               MIND & SOUL este mai mult decat un retreat. Este o reintalnire cu tine si cu partea din tine pe care poate ai pus-o pe pauza intre responsabilitati, griji si asteptari.
             </p>
@@ -246,7 +266,7 @@ export default function MindSoulContent() {
       {/* For you */}
       <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
         <div className="max-w-[900px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-8 text-center" style={{ color: "#264540" }}>Este pentru tine daca:</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#264540" }}>Este pentru tine daca:</h2></Reveal>
           <div className="space-y-3">
             {forYou.map((item, i) => (
               <Reveal key={i} delay={i * 0.05}>
@@ -268,10 +288,12 @@ export default function MindSoulContent() {
         </div>
       </section>
 
+      <CTABar />
+
       {/* Outcomes */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-10 text-center" style={{ color: "#264540" }}>Cum vei pleca acasa?</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-10 text-center" style={{ color: "#264540" }}>Cum vei pleca acasa?</h2></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {outcomes.map((o, i) => (
               <Reveal key={o.label} delay={i * 0.06}>
@@ -285,10 +307,12 @@ export default function MindSoulContent() {
         </div>
       </section>
 
+      <CTABar />
+
       {/* Testimonials */}
       <section className="py-20 px-6" style={{ background: "#EEF4EE" }}>
         <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-10 text-center" style={{ color: "#264540" }}>Testimoniale</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-10 text-center" style={{ color: "#264540" }}>Testimoniale</h2></Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {testimonials.map((t, i) => (
               <Reveal key={t.name} delay={i * 0.1}>
@@ -308,7 +332,7 @@ export default function MindSoulContent() {
       {/* Activities */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-8 text-center" style={{ color: "#264540" }}>Ce facem impreuna</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#264540" }}>Ce facem impreuna</h2></Reveal>
           <div className="space-y-3">
             {activities.map((a, i) => (
               <Reveal key={i} delay={i * 0.05}>
@@ -322,13 +346,15 @@ export default function MindSoulContent() {
         </div>
       </section>
 
+      <CTABar />
+
       {/* Hypnosis & Regression - FULL TEXT */}
       <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
         <div className="max-w-[1000px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-snug mb-6" style={{ color: "#264540" }}>Ce este Hipnoza Ericksoniana si Terapia prin regresii</h2>
+            <h2 className="font-serif text-[clamp(26px,2.8vw,38px)] font-semibold leading-snug mb-6" style={{ color: "#264540" }}>Ce este Hipnoza Ericksoniana si Terapia prin regresii</h2>
 
-            <h3 className="font-serif text-xl font-normal mb-4 mt-8" style={{ color: "#306858" }}>Hipnoza Ericksoniana</h3>
+            <h3 className="font-serif text-[22px] font-semibold mb-4 mt-8" style={{ color: "#306858" }}>Hipnoza Ericksoniana</h3>
             <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#4A6858" }}>
               Probabil primul gand este: "O sa pierd controlul." Nu se intampla asta. Sau "Imi voi pierde controlul." Nu, nu adormi, nu "dispari", nu esti vulnerabila in fata nimanui. Esti pur si simplu mai conectata cu tine - mai putin zgomot, mai mult tu.
             </p>
@@ -339,7 +365,7 @@ export default function MindSoulContent() {
               Ramai prezenta, constienta si in control in fiecare moment. Nu adormi, nu "dispari" si nimeni nu iti poate sugera ceva ce tu nu accepti. Este o stare naturala de relaxare, pe care o cunosti deja, ca atunci cand esti absorbita intr-o carte sau in ganduri, in care te conectezi mai profund cu tine. Aici, subconstientul devine accesibil si schimbarea se intampla la un nivel mai profund decat prin simpla discutie.
             </p>
 
-            <h3 className="font-serif text-xl font-normal mb-4 mt-8" style={{ color: "#306858" }}>Terapia prin Regresii in Vieti Anterioare (metodologie PLRA, acreditata international)</h3>
+            <h3 className="font-serif text-[22px] font-semibold mb-4 mt-8" style={{ color: "#306858" }}>Terapia prin Regresii in Vieti Anterioare (metodologie PLRA, acreditata international)</h3>
             <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#4A6858" }}>
               Nu este ezoterism! Este o metodologie structurata, cu protocoale clare, care merge la sursa reala a blocajelor, acolo unde terapia clasica nu ajunge intotdeauna. Nu trebuie sa crezi in reincarnare. Procesul poate fi trait ca o metafora terapeutica, o vizualizare sau o explorare a subconstientului, efectul de vindecare este acelasi.
             </p>
@@ -356,7 +382,7 @@ export default function MindSoulContent() {
       {/* Team */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-12 text-center" style={{ color: "#264540" }}>Echipa noastra</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-12 text-center" style={{ color: "#264540" }}>Echipa noastra</h2></Reveal>
           <div className="space-y-12">
             {team.map((t, i) => (
               <Reveal key={t.name} delay={i * 0.1}>
@@ -365,7 +391,7 @@ export default function MindSoulContent() {
                     <img src={t.photo} alt={t.name} className="w-full h-full object-cover object-top" />
                   </div>
                   <div className="flex-1 text-center md:text-left">
-                    <h3 className="font-serif text-xl font-normal mb-1" style={{ color: "#264540" }}>{t.name}</h3>
+                    <h3 className="font-serif text-[22px] font-semibold mb-1" style={{ color: "#264540" }}>{t.name}</h3>
                     <p className="text-[13px] mb-4" style={{ color: "#D4B060" }}>{t.role}</p>
                     <p className="text-[16px] leading-[1.8] font-light whitespace-pre-line" style={{ color: "#4A6858" }}>{t.bio}</p>
                     {(t.instagram || t.facebook) && (
@@ -382,10 +408,12 @@ export default function MindSoulContent() {
         </div>
       </section>
 
+      <CTABar />
+
       {/* Included */}
       <section className="py-20 px-6" style={{ background: "#EEF4EE" }}>
         <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-8 text-center" style={{ color: "#264540" }}>Ce este inclus</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#264540" }}>Ce este inclus</h2></Reveal>
           <div className="space-y-2.5">
             {included.map((item, i) => (
               <Reveal key={i} delay={i * 0.04}>
@@ -398,7 +426,7 @@ export default function MindSoulContent() {
           </div>
           <Reveal delay={0.5}>
             <div className="mt-6 p-5 rounded-xl bg-white text-center" style={{ border: "2px solid rgba(212,176,96,0.2)" }}>
-              <p className="text-[16px]" style={{ color: "#D4B060" }}>Bonus special: O sesiune 1:1 gratuita la alegere cu una dintre cele 3 facilitatoare, valabila pana pe 5 august 2026</p>
+              <p className="text-[16px] font-semibold" style={{ color: "#C0392B" }}>Bonus special: O sesiune 1:1 gratuita la alegere cu una dintre cele 3 facilitatoare, valabila pana pe 5 august 2026</p>
             </div>
           </Reveal>
         </div>
@@ -413,7 +441,7 @@ export default function MindSoulContent() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-6 text-center" style={{ color: "#264540" }}>Locatia</h2>
+            <h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-6 text-center" style={{ color: "#264540" }}>Locatia</h2>
             <p className="text-[16px] leading-relaxed font-light text-center mb-8" style={{ color: "#4A6858" }}>
               Locatia se afla la doar 60 minute de centrul Bucurestiului, departe de zgomotul si agitatia urbana, in satul Stanesti din judetul Dambovita.
             </p>
@@ -449,7 +477,7 @@ export default function MindSoulContent() {
       {/* Program */}
       <section className="py-16 px-6" style={{ background: "#EEF4EE" }}>
         <div className="max-w-[800px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-8 text-center" style={{ color: "#264540" }}>Programul</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#264540" }}>Programul</h2></Reveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {program.map((p, i) => (
               <Reveal key={p.day} delay={i * 0.08}>
@@ -466,7 +494,7 @@ export default function MindSoulContent() {
       {/* Gallery with lightbox */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-10 text-center" style={{ color: "#264540" }}>Galerie</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-10 text-center" style={{ color: "#264540" }}>Galerie</h2></Reveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {galleryImages.map((src, i) => (
               <Reveal key={i} delay={i * 0.05}>
@@ -480,45 +508,61 @@ export default function MindSoulContent() {
       </section>
 
       {/* Pricing */}
-      <section className="py-20 px-6" style={{ background: "linear-gradient(160deg, #1E3230 0%, #264540 30%, #306858 60%, #4A8870 100%)" }}>
+      <section id="pricing" className="py-20 px-6" style={{ background: "#FAFAFA" }}>
         <div className="max-w-[800px] mx-auto text-center">
           <Reveal>
-            <p className="text-[12px] uppercase tracking-[3px] font-medium mb-5" style={{ color: "#D4C088" }}>Investitia ta</p>
-            <h2 className="font-serif text-[clamp(28px,4vw,40px)] text-white font-normal mb-10">Alege varianta potrivita</h2>
+            <p className="text-[13px] uppercase tracking-[3px] font-medium mb-5" style={{ color: "#888" }}>Investitia ta</p>
+            <h2 className="font-serif text-[clamp(30px,4vw,44px)] font-semibold mb-10" style={{ color: "#1E3230" }}>Alege varianta potrivita</h2>
           </Reveal>
+
+          {/* Early Bird Card */}
           <Reveal delay={0.1}>
-            <div className="rounded-2xl p-8 mb-6" style={{ background: "rgba(255,255,255,0.1)", border: "2px solid rgba(212,176,96,0.3)", backdropFilter: "blur(12px)" }}>
-              <p className="text-[13px] uppercase tracking-wider mb-2" style={{ color: "#D4B060" }}>Early Booking - pana pe 16 iunie</p>
-              <p className="font-serif text-5xl text-white font-normal mb-1">2.750</p>
-              <p className="text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>RON</p>
+            <div className="rounded-2xl p-8 mb-8 bg-white relative" style={{ border: "2.5px solid #C0392B" }}>
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 text-[13px] font-semibold uppercase tracking-wider px-5 py-1 rounded-full text-white" style={{ background: "#C0392B" }}>Early Booking</span>
+              <p className="text-[16px] font-semibold mt-2 mb-5" style={{ color: "#C0392B" }}>Pana pe 16 iunie 2026</p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-xl p-5" style={{ background: "#FFF5F5", border: "1px solid #F5C6C6" }}>
+                  <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#888" }}>Cam. dubla</p>
+                  <p className="font-serif text-[40px] font-semibold leading-none" style={{ color: "#1E3230" }}>2.750</p>
+                  <p className="text-[14px] mt-1" style={{ color: "#888" }}>RON</p>
+                </div>
+                <div className="rounded-xl p-5" style={{ background: "#FFF5F5", border: "1px solid #F5C6C6" }}>
+                  <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#888" }}>Cam. single</p>
+                  <p className="font-serif text-[40px] font-semibold leading-none" style={{ color: "#1E3230" }}>3.120</p>
+                  <p className="text-[14px] mt-1" style={{ color: "#888" }}>RON</p>
+                </div>
+              </div>
             </div>
           </Reveal>
+
+          {/* Standard pricing */}
           <Reveal delay={0.15}>
-            <p className="text-[13px] uppercase tracking-wider mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>Pret standard (dupa 16 iunie)</p>
+            <p className="text-[13px] uppercase tracking-wider mb-4" style={{ color: "#999" }}>Pret standard (dupa 16 iunie)</p>
             <div className="grid grid-cols-2 gap-4 mb-8">
-              <div className="rounded-xl p-6" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.1)" }}>
-                <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "rgba(255,255,255,0.4)" }}>Cam. dubla</p>
-                <p className="font-serif text-2xl text-white">2.950 <span className="text-sm" style={{ color: "rgba(255,255,255,0.4)" }}>RON</span></p>
+              <div className="rounded-xl p-5 bg-white" style={{ border: "1px solid #E8E8E8" }}>
+                <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#999" }}>Cam. dubla</p>
+                <p className="font-serif text-[28px] font-semibold" style={{ color: "#1E3230" }}>2.950 <span className="text-[14px] font-normal" style={{ color: "#999" }}>RON</span></p>
               </div>
-              <div className="rounded-xl p-6" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.1)" }}>
-                <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "rgba(255,255,255,0.4)" }}>Cam. single</p>
-                <p className="font-serif text-2xl text-white">3.320 <span className="text-sm" style={{ color: "rgba(255,255,255,0.4)" }}>RON</span></p>
+              <div className="rounded-xl p-5 bg-white" style={{ border: "1px solid #E8E8E8" }}>
+                <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#999" }}>Cam. single</p>
+                <p className="font-serif text-[28px] font-semibold" style={{ color: "#1E3230" }}>3.320 <span className="text-[14px] font-normal" style={{ color: "#999" }}>RON</span></p>
               </div>
             </div>
           </Reveal>
+
           <Reveal delay={0.2}>
-            <div className="space-y-2 mb-8 text-[15px]" style={{ color: "rgba(255,255,255,0.55)" }}>
+            <div className="space-y-2 mb-8 text-[15px]" style={{ color: "#666" }}>
               <p>Locuri limitate - doar 20 de locuri</p>
               <p>Plata in 2 transe: avans de 40% la inscriere, iar diferenta se achita pana pe 6 iulie 2026</p>
               <p>Vino impreuna cu o prietena si beneficiati amandoua de 5% reducere la participare</p>
             </div>
           </Reveal>
           <Reveal delay={0.25}>
-            <a href={formUrl} target="_blank" rel="noopener noreferrer" className="inline-block text-white px-10 py-4 rounded-full text-[16px] font-medium hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #E870A0, #A855D0)", boxShadow: "0 6px 24px rgba(168,85,208,0.3)" }}>Vreau locul meu!</a>
+            <a href={formUrl} target="_blank" rel="noopener noreferrer" className="inline-block text-white px-10 py-4 rounded-full text-[17px] font-semibold hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #E870A0, #A855D0)", boxShadow: "0 6px 24px rgba(168,85,208,0.3)" }}>Vreau locul meu!</a>
           </Reveal>
           <Reveal delay={0.3}>
-            <div className="mt-12">
-              <p className="text-[12px] uppercase tracking-[3px] mb-5" style={{ color: "rgba(255,255,255,0.35)" }}>Timp ramas pentru Early Booking</p>
+            <div className="mt-12 rounded-2xl p-6" style={{ background: "#1E3230" }}>
+              <p className="text-[12px] uppercase tracking-[3px] mb-5" style={{ color: "rgba(255,255,255,0.45)" }}>Timp ramas pentru Early Booking</p>
               <EarlyBirdCountdown />
             </div>
           </Reveal>
@@ -528,7 +572,7 @@ export default function MindSoulContent() {
       {/* FAQ */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(26px,3vw,38px)] font-normal leading-snug mb-10 text-center" style={{ color: "#264540" }}>Intrebari frecvente</h2></Reveal>
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-10 text-center" style={{ color: "#264540" }}>Intrebari frecvente</h2></Reveal>
           <div className="space-y-3">
             {faq.map((f, i) => (
               <Reveal key={i} delay={i * 0.05}>
