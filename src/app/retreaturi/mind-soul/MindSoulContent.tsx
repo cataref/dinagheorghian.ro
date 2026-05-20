@@ -184,7 +184,7 @@ function CTABar() {
   const whatsappUrl = "https://wa.me/40731196603?text=Buna%2C%20vreau%20detalii%20pentru%20retreatul%20Mind%20Soul";
   const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeEob2Gczz3TvNS3r7OVwInZodExjWs6mb7UlW9ZdNVlFkXcw/viewform";
   return (
-    <div className="py-8 px-6">
+    <div className="py-14 px-6">
       <div className="max-w-[700px] mx-auto flex flex-col sm:flex-row gap-3 justify-center items-center">
         <a href={formUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white px-7 py-3 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #C0392B, #8E44AD)", boxShadow: "0 6px 20px rgba(142,68,173,0.3)" }}>Inscrie-te acum</a>
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white px-7 py-3 rounded-full text-[15px] font-medium hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #25D366, #128C7E)", boxShadow: "0 6px 20px rgba(37,211,102,0.25)" }}>
@@ -220,7 +220,7 @@ export default function MindSoulContent() {
           <Reveal>
             <p className="font-serif text-2xl md:text-3xl italic mb-8" style={{ color: "#264540" }}>"De ce nu sunt fericita?"</p>
             <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#4A6858" }}>
-              Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci totul.
+              Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci totul.
             </p>
             <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#4A6858" }}>
               In retreatul Mind & Soul ai un spatiu creat pentru femeia care a dat tot si a uitat de ea insasi. Aici te opresti din ritmul zilnic si incepi sa te intelegi cu adevarat. Te eliberezi de emotiile si blocajele din trecut care iti influenteaza prezentul, inveti sa iti observi mintea si tiparele si incepi sa creezi mai constient directia in care vrei sa mergi.
@@ -504,7 +504,7 @@ export default function MindSoulContent() {
       <section id="pricing" className="py-0 overflow-hidden">
         <div className="max-w-[800px] mx-auto rounded-2xl overflow-hidden" style={{ border: "1px solid #e0e0e0" }}>
           {/* Teal gradient header */}
-          <div className="py-8 px-6 text-center" style={{ background: "linear-gradient(135deg, #1E3230, #264540)" }}>
+          <div className="py-8 px-6 text-center" style={{ background: "linear-gradient(160deg, #1E3230 0%, #264540 30%, #306858 60%, #4A8870 100%)" }}>
             <Reveal>
               <p className="text-[12px] uppercase tracking-[3px] font-medium mb-3" style={{ color: "rgba(255,255,255,0.5)" }}>Investitia ta</p>
               <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-semibold text-white">Alege varianta potrivita</h2>
@@ -575,7 +575,7 @@ export default function MindSoulContent() {
 
             {/* Countdown */}
             <Reveal delay={0.3}>
-              <div className="mt-10 rounded-2xl p-6 text-center" style={{ background: "linear-gradient(135deg, #1E3230, #264540)" }}>
+              <div className="mt-10 rounded-2xl p-6 text-center" style={{ background: "linear-gradient(160deg, #1E3230 0%, #264540 30%, #306858 60%, #4A8870 100%)" }}>
                 <p className="text-[12px] uppercase tracking-[3px] mb-5" style={{ color: "rgba(255,255,255,0.45)" }}>Timp ramas pentru Early Booking</p>
                 <EarlyBirdCountdown />
               </div>
@@ -611,8 +611,8 @@ export default function MindSoulContent() {
       {/* Final CTA */}
       <section className="py-20 px-6 text-center" style={{ background: "linear-gradient(160deg, #264540 0%, #306858 40%, #4A8870 70%, #D4B060 100%)" }}>
         <Reveal>
-          <p className="font-serif text-[clamp(24px,3vw,36px)] text-white font-normal leading-snug max-w-xl mx-auto mb-4">Ai investit deja atat de mult in toti ceilalti.</p>
-          <p className="text-white/55 text-[16px] mb-8 font-light">Aceste 4 zile sunt pentru tine. Meriti asta!</p>
+          <p className="font-serif text-[clamp(24px,3vw,36px)] text-white font-normal leading-snug max-w-xl mx-auto mb-4">Ai investit deja atat de mult in toti ceilalti.</p>
+          <p className="text-white text-[16px] mb-8 font-light">Aceste 4 zile sunt pentru tine. Meriti asta!</p>
           <a href={formUrl} target="_blank" rel="noopener noreferrer" className="inline-block text-white px-10 py-4 rounded-full text-[16px] font-medium hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #E870A0, #A855D0)", boxShadow: "0 6px 24px rgba(168,85,208,0.3)" }}>Da! Vreau locul meu!</a>
         </Reveal>
       </section>

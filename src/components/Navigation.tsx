@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
+  { href: "/", label: "Acasa" },
   { href: "/despre", label: "Despre mine" },
   { href: "/sesiuni", label: "Sesiuni 1:1" },
   { href: "/programe", label: "Programe" },

@@ -142,10 +142,10 @@ export default function ContactContent() {
                   Contact direct
                 </h3>
                 <a
-                  href="mailto:contact@dinagheorghian.ro"
+                  href="mailto:dinagureu@yahoo.com"
                   className="text-[16px] text-accent-rose hover:underline"
                 >
-                  contact@dinagheorghian.ro
+                  dinagureu@yahoo.com
                 </a>
               </div>
 
