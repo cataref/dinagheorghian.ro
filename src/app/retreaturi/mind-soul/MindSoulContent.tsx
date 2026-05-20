@@ -501,74 +501,86 @@ export default function MindSoulContent() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-20 px-6 bg-white">
-        <div className="max-w-[800px] mx-auto text-center">
-          <Reveal>
-            <p className="text-[13px] uppercase tracking-[3px] font-medium mb-5" style={{ color: "#999" }}>Investitia ta</p>
-            <h2 className="font-serif text-[clamp(30px,4vw,44px)] font-semibold mb-10" style={{ color: "#1E3230" }}>Alege varianta potrivita</h2>
-          </Reveal>
+      <section id="pricing" className="py-0 overflow-hidden">
+        <div className="max-w-[800px] mx-auto rounded-2xl overflow-hidden" style={{ border: "1px solid #e0e0e0" }}>
+          {/* Teal gradient header */}
+          <div className="py-8 px-6 text-center" style={{ background: "linear-gradient(135deg, #1E3230, #264540)" }}>
+            <Reveal>
+              <p className="text-[12px] uppercase tracking-[3px] font-medium mb-3" style={{ color: "rgba(255,255,255,0.5)" }}>Investitia ta</p>
+              <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-semibold text-white">Alege varianta potrivita</h2>
+            </Reveal>
+          </div>
 
-          {/* Early Bird Card */}
-          <Reveal delay={0.1}>
-            <div className="rounded-2xl p-8 mb-8 bg-white relative overflow-hidden" style={{ border: "2px solid transparent", backgroundClip: "padding-box" }}>
-              <div className="absolute inset-0 rounded-2xl" style={{ padding: "2px", background: "linear-gradient(135deg, #E870A0, #8E44AD)", WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)", WebkitMaskComposite: "xor", maskComposite: "exclude" }} />
-              <span className="relative inline-block text-[13px] font-semibold uppercase tracking-wider px-6 py-1.5 rounded-full text-white mb-4" style={{ background: "linear-gradient(135deg, #8E44AD, #6C3483)" }}>Early Booking</span>
-              <p className="text-[16px] font-semibold mb-5" style={{ color: "#8E44AD" }}>Pana pe 16 iunie 2026</p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-xl p-5" style={{ background: "linear-gradient(135deg, #F8E8F0, #EDE0F8)" }}>
-                  <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#888" }}>Cam. dubla</p>
-                  <p className="font-serif text-[42px] font-bold leading-none" style={{ color: "#1E3230" }}>2.750</p>
-                  <p className="text-[14px] mt-1" style={{ color: "#888" }}>RON</p>
+          {/* White body */}
+          <div className="bg-white px-6 md:px-10 py-10">
+            {/* Early Bird Card */}
+            <Reveal delay={0.1}>
+              <div className="rounded-2xl p-7 mb-8 bg-white relative" style={{ border: "3px solid #6C3483" }}>
+                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 text-[13px] font-semibold uppercase tracking-[2px] px-6 py-1.5 rounded-full text-white" style={{ background: "linear-gradient(135deg, #8E44AD, #6C3483)" }}>Early Booking</span>
+                <p className="text-[15px] font-semibold mt-2 mb-5" style={{ color: "#6C3483" }}>Pana pe 16 iunie 2026</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="rounded-xl py-5 px-4" style={{ background: "linear-gradient(160deg, #F0E6F6, #E8DCF0)" }}>
+                    <p className="text-[12px] uppercase tracking-wider font-medium mb-2" style={{ color: "#6C3483" }}>Loc in cam. dubla</p>
+                    <p className="font-serif text-[52px] font-semibold leading-none" style={{ color: "#1a1a1a" }}>2.750</p>
+                    <p className="text-[15px] mt-1" style={{ color: "#666" }}>RON</p>
+                  </div>
+                  <div className="rounded-xl py-5 px-4" style={{ background: "linear-gradient(160deg, #F0E6F6, #E8DCF0)" }}>
+                    <p className="text-[12px] uppercase tracking-wider font-medium mb-2" style={{ color: "#6C3483" }}>Loc in cam. single</p>
+                    <p className="font-serif text-[52px] font-semibold leading-none" style={{ color: "#1a1a1a" }}>3.120</p>
+                    <p className="text-[15px] mt-1" style={{ color: "#666" }}>RON</p>
+                  </div>
                 </div>
-                <div className="rounded-xl p-5" style={{ background: "linear-gradient(135deg, #F8E8F0, #EDE0F8)" }}>
-                  <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#888" }}>Cam. single</p>
-                  <p className="font-serif text-[42px] font-bold leading-none" style={{ color: "#1E3230" }}>3.120</p>
-                  <p className="text-[14px] mt-1" style={{ color: "#888" }}>RON</p>
+              </div>
+            </Reveal>
+
+            {/* Standard pricing */}
+            <Reveal delay={0.15}>
+              <p className="text-[12px] uppercase tracking-[2px] font-medium mb-3 text-center" style={{ color: "#aaa" }}>Pret standard (dupa 16 iunie)</p>
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="rounded-xl p-5 text-center" style={{ border: "1.5px solid #ddd" }}>
+                  <p className="text-[11px] uppercase tracking-wider mb-1" style={{ color: "#aaa" }}>Loc in cam. dubla</p>
+                  <p className="font-serif text-[30px] font-semibold" style={{ color: "#222" }}>2.950 <span className="text-[14px] font-normal" style={{ color: "#999" }}>RON</span></p>
+                </div>
+                <div className="rounded-xl p-5 text-center" style={{ border: "1.5px solid #ddd" }}>
+                  <p className="text-[11px] uppercase tracking-wider mb-1" style={{ color: "#aaa" }}>Loc in cam. single</p>
+                  <p className="font-serif text-[30px] font-semibold" style={{ color: "#222" }}>3.320 <span className="text-[14px] font-normal" style={{ color: "#999" }}>RON</span></p>
                 </div>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
 
-          {/* Standard pricing */}
-          <Reveal delay={0.15}>
-            <p className="text-[13px] uppercase tracking-wider mb-4" style={{ color: "#999" }}>Pret standard (dupa 16 iunie)</p>
-            <div className="grid grid-cols-2 gap-4 mb-8">
-              <div className="rounded-xl p-5 bg-white" style={{ border: "1px solid #E8E8E8" }}>
-                <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#999" }}>Cam. dubla</p>
-                <p className="font-serif text-[28px] font-semibold" style={{ color: "#1E3230" }}>2.950 <span className="text-[14px] font-normal" style={{ color: "#999" }}>RON</span></p>
+            {/* Info lines with icons */}
+            <Reveal delay={0.2}>
+              <div className="space-y-4 mb-8 text-left max-w-md mx-auto">
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#8E44AD" }} viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  <p className="text-[15px]" style={{ color: "#444" }}>Locuri limitate - doar 20 de locuri</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#8E44AD" }} viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                  <p className="text-[15px]" style={{ color: "#444" }}>Plata in 2 transe: avans de 40% la inscriere, iar diferenta se achita pana pe 6 iulie 2026</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#8E44AD" }} viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
+                  <p className="text-[15px]" style={{ color: "#444" }}>Vino impreuna cu o prietena si beneficiati amandoua de 5% reducere la participare</p>
+                </div>
               </div>
-              <div className="rounded-xl p-5 bg-white" style={{ border: "1px solid #E8E8E8" }}>
-                <p className="text-[12px] uppercase tracking-wider mb-2" style={{ color: "#999" }}>Cam. single</p>
-                <p className="font-serif text-[28px] font-semibold" style={{ color: "#1E3230" }}>3.320 <span className="text-[14px] font-normal" style={{ color: "#999" }}>RON</span></p>
-              </div>
-            </div>
-          </Reveal>
+            </Reveal>
 
-          <Reveal delay={0.2}>
-            <div className="space-y-4 mb-8 text-left max-w-md mx-auto">
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#8E44AD" }} viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-                <p className="text-[15px]" style={{ color: "#555" }}>Locuri limitate - doar 20 de locuri</p>
+            {/* CTA button */}
+            <Reveal delay={0.25}>
+              <div className="text-center">
+                <a href={formUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white px-12 py-4 rounded-full text-[17px] font-semibold uppercase tracking-[1.5px] hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #C0392B, #8E44AD)", boxShadow: "0 6px 24px rgba(142,68,173,0.3)" }}>Rezerva acum <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
               </div>
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#8E44AD" }} viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-                <p className="text-[15px]" style={{ color: "#555" }}>Plata in 2 transe: avans de 40% la inscriere, iar diferenta se achita pana pe 6 iulie 2026</p>
+            </Reveal>
+
+            {/* Countdown */}
+            <Reveal delay={0.3}>
+              <div className="mt-10 rounded-2xl p-6 text-center" style={{ background: "linear-gradient(135deg, #1E3230, #264540)" }}>
+                <p className="text-[12px] uppercase tracking-[3px] mb-5" style={{ color: "rgba(255,255,255,0.45)" }}>Timp ramas pentru Early Booking</p>
+                <EarlyBirdCountdown />
               </div>
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#8E44AD" }} viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
-                <p className="text-[15px]" style={{ color: "#555" }}>Vino impreuna cu o prietena si beneficiati amandoua de 5% reducere la participare</p>
-              </div>
-            </div>
-          </Reveal>
-          <Reveal delay={0.25}>
-            <a href={formUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white px-12 py-4 rounded-full text-[17px] font-semibold uppercase tracking-wider hover:-translate-y-0.5 transition-all" style={{ background: "linear-gradient(135deg, #C0392B, #8E44AD)", boxShadow: "0 6px 24px rgba(142,68,173,0.3)" }}>Rezerva acum <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-          </Reveal>
-          <Reveal delay={0.3}>
-            <div className="mt-12 rounded-2xl p-6" style={{ background: "linear-gradient(135deg, #1E3230, #264540)" }}>
-              <p className="text-[12px] uppercase tracking-[3px] mb-5" style={{ color: "rgba(255,255,255,0.45)" }}>Timp ramas pentru Early Booking</p>
-              <EarlyBirdCountdown />
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
       </section>
 
