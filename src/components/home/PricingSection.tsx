@@ -31,10 +31,10 @@ export default function PricingSection() {
   return (
     <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
       <div className="text-center mb-12">
-        <p className="text-[12px] tracking-[3px] uppercase font-medium mb-3.5" style={{ color: "#306858" }}>
+        <p className="text-[12px] tracking-[3px] uppercase font-medium mb-3.5" style={{ color: "#1a1a1a" }}>
           Pachete sesiuni 1:1
         </p>
-        <h2 className="font-serif text-[clamp(28px,3vw,38px)] font-normal" style={{ color: "#264540" }}>
+        <h2 className="font-serif text-[clamp(28px,3vw,38px)] font-normal" style={{ color: "#1a1a1a" }}>
           Alege formatul potrivit pentru tine
         </h2>
       </div>
@@ -107,7 +107,7 @@ export default function PricingSection() {
                       }
                     : {
                         border: "1.5px solid #A8D0B8",
-                        color: "#306858",
+                        color: "#1a1a1a",
                       }
                 }
               >

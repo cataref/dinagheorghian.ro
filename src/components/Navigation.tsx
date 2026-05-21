@@ -140,12 +140,7 @@ export default function Navigation() {
             </Link>
           )
         )}
-        <Link
-          href="/contact"
-          className="glass text-white text-[14px] font-medium px-5 py-2 rounded-full hover:bg-white/20 transition-colors"
-        >
-          Contul meu
-        </Link>
+
       </div>
 
       {/* Mobile toggle */}

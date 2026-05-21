@@ -103,7 +103,7 @@ export default function DespreContent() {
                     className="w-2.5 h-2.5 rounded-full flex-shrink-0"
                     style={{ background: item.color }}
                   />
-                  <p className="text-sm" style={{ color: "#264540" }}>{item.label}</p>
+                  <p className="text-sm" style={{ color: "#1a1a1a" }}>{item.label}</p>
                 </div>
               </Reveal>
             ))}
