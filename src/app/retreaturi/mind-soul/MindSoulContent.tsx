@@ -253,29 +253,8 @@ export default function MindSoulContent() {
         backgroundImage="/images/retreat/hero-banner.png"
       />
 
-      {/* Intro */}
-      <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #EEF4EE 0%, #fff 100%)" }}>
-        <div className="max-w-[1000px] mx-auto text-center">
-          <Reveal>
-            <p className="font-serif text-2xl md:text-3xl italic mb-8" style={{ color: "#1a1a1a" }}>"De ce nu sunt fericita?"</p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci totul.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              In retreatul Mind & Soul ai un spatiu creat pentru femeia care a dat tot si a uitat de ea insasi. Aici te opresti din ritmul zilnic si incepi sa te intelegi cu adevarat. Te eliberezi de emotiile si blocajele din trecut care iti influenteaza prezentul, inveti sa iti observi mintea si tiparele si incepi sa creezi mai constient directia in care vrei sa mergi.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
-              Acest retreat a fost creat pentru tine, nu este doar o vacanta, ci un drum spre linistea si echilibrul tau - spre fericire!
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-
-      <StickyCtaBar />
-
       {/* What is this retreat */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #EEF4EE 0%, #fff 100%)" }}>
         <div className="max-w-[1000px] mx-auto">
           <Reveal>
             <h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-6" style={{ color: "#1a1a1a" }}>Ce este acest Retreat?</h2>
@@ -303,6 +282,9 @@ export default function MindSoulContent() {
         </div>
       </section>
 
+
+      <StickyCtaBar />
+
       {/* For you */}
       <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
         <div className="max-w-[900px] mx-auto">
@@ -320,6 +302,27 @@ export default function MindSoulContent() {
 
         </div>
       </section>
+
+
+      {/* Intro - De ce nu sunt fericita */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1000px] mx-auto text-center">
+          <Reveal>
+            <p className="font-serif text-2xl md:text-3xl italic mb-8" style={{ color: "#1a1a1a" }}>"De ce nu sunt fericita?"</p>
+            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+              Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci totul.
+            </p>
+            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+              In retreatul Mind & Soul ai un spatiu creat pentru femeia care a dat tot si a uitat de ea insasi. Aici te opresti din ritmul zilnic si incepi sa te intelegi cu adevarat. Te eliberezi de emotiile si blocajele din trecut care iti influenteaza prezentul, inveti sa iti observi mintea si tiparele si incepi sa creezi mai constient directia in care vrei sa mergi.
+            </p>
+            <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
+              Acest retreat a fost creat pentru tine, nu este doar o vacanta, ci un drum spre linistea si echilibrul tau - spre fericire!
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+
 
 
       {/* Outcomes */}
