@@ -183,16 +183,18 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
 function StickyCtaBar() {
   const [isSticky, setIsSticky] = useState(false);
   const barRef = useRef<HTMLDivElement>(null);
-  const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const sentinel = sentinelRef.current;
-    if (!sentinel) return;
+    const bar = barRef.current;
+    if (!bar) return;
     const observer = new IntersectionObserver(
-      ([entry]) => setIsSticky(!entry.isIntersecting),
-      { threshold: 0, rootMargin: "-72px 0px 0px 0px" }
+      ([entry]) => {
+        // Only show sticky when the inline bar has scrolled completely out of view
+        setIsSticky(!entry.isIntersecting && entry.boundingClientRect.bottom < 0);
+      },
+      { threshold: 0 }
     );
-    observer.observe(sentinel);
+    observer.observe(bar);
     return () => observer.disconnect();
   }, []);
 
@@ -212,8 +214,7 @@ function StickyCtaBar() {
 
   return (
     <>
-      {/* Sentinel + inline bar */}
-      <div ref={sentinelRef} />
+      {/* Inline bar - observed for sticky trigger */}
       <div ref={barRef} className="py-14 px-6">
         <div className="max-w-[700px] mx-auto">
           {buttons}
