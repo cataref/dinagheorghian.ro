@@ -8,12 +8,14 @@ export default function AboutTeaser() {
     <section className="bg-white py-24 px-6 md:px-12">
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-14 items-center">
         {/* Visual */}
-        <Reveal className="flex-shrink-0 w-[260px] h-[340px] rounded-2xl relative overflow-hidden shadow-[12px_12px_40px_rgba(0,0,0,0.15)]">
-          <img src="/images/dina-reading.png" alt="Dina Gheorghian" className="w-full h-full object-cover rounded-2xl" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl" />
-          <p className="absolute bottom-6 left-6 right-6 font-serif text-base text-white italic leading-relaxed drop-shadow-md">
-            "Am ales sa transform durerea in directia mea de viata."
-          </p>
+        <Reveal className="flex-shrink-0 w-[260px]">
+          <div className="rounded-2xl overflow-hidden relative" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.12)" }}>
+            <img src="/images/dina-reading.jpg" alt="Dina Gheorghian" className="w-full h-auto block" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <p className="absolute bottom-6 left-6 right-6 font-serif text-base text-white italic leading-relaxed drop-shadow-md">
+              "Am ales sa transform durerea in directia mea de viata."
+            </p>
+          </div>
         </Reveal>
 
         {/* Text */}
