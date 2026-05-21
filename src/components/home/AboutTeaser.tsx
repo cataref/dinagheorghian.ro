@@ -9,8 +9,8 @@ export default function AboutTeaser() {
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-14 items-center">
         {/* Visual */}
         <Reveal className="flex-shrink-0 w-[260px]">
-          <div className="rounded-2xl overflow-hidden relative" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.12)" }}>
-            <img src="/images/dina-reading.jpg" alt="Dina Gheorghian" className="w-full h-auto block" />
+          <div className="rounded-2xl overflow-hidden relative" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.12)", maxHeight: "340px" }}>
+            <img src="/images/dina-reading.jpg" alt="Dina Gheorghian" className="w-full h-full object-cover block" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <p className="absolute bottom-6 left-6 right-6 font-serif text-base text-white italic leading-relaxed drop-shadow-md">
               "Am ales sa transform durerea in directia mea de viata."
