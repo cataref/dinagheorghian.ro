@@ -53,7 +53,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
             className="text-[16.5px] leading-relaxed max-w-[440px] mx-auto lg:mx-0 mt-6 mb-8 font-light"
-            style={{ color: "rgba(255,255,255,0.6)" }}
+            style={{ color: "rgba(255,255,255,0.9)" }}
           >
             Sesiuni de transformare interioara, eliberare emotionala si
             reconectare cu sinele autentic. Un spatiu sigur pentru sufletul tau.

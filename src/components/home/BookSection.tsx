@@ -8,15 +8,8 @@ export default function BookSection() {
     <section className="py-20 px-6 bg-white">
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-12 items-center">
         {/* Cover */}
-        <Reveal className="flex-shrink-0 w-[220px] h-[310px] rounded-2xl bg-[linear-gradient(160deg,#264540,#306858,#4A8870)] relative overflow-hidden shadow-[12px_12px_40px_rgba(38,69,64,0.3)]">
-          <div className="absolute inset-5 border border-white/20 rounded-lg flex flex-col justify-end p-5">
-            <p className="font-serif text-xl text-white font-normal leading-snug mb-1.5">
-              De ce eu?
-            </p>
-            <p className="text-[12px] text-white/50 tracking-wide uppercase">
-              Dina Gheorghian
-            </p>
-          </div>
+        <Reveal className="flex-shrink-0 w-[220px] h-[310px] rounded-2xl relative overflow-hidden shadow-[12px_12px_40px_rgba(38,69,64,0.3)]">
+          <img src="/images/book-cover.png" alt="De ce eu? - Dina Gheorghian" className="w-full h-full object-cover rounded-2xl" />
         </Reveal>
 
         {/* Text */}

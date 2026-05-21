@@ -80,7 +80,7 @@ export default function ServicesGrid() {
               <h3 className="text-[16px] font-semibold text-white mb-2">
                 {s.title}
               </h3>
-              <p className="text-[16px] leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
+              <p className="text-[16px] leading-relaxed" style={{ color: "rgba(255,255,255,0.9)" }}>
                 {s.desc}
               </p>
             </Link>

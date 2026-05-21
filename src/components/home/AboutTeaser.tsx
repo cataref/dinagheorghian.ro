@@ -8,10 +8,11 @@ export default function AboutTeaser() {
     <section className="bg-gradient-to-b from-mint-bg to-white py-24 px-6 md:px-12">
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-14 items-center">
         {/* Visual */}
-        <Reveal className="flex-shrink-0 w-full max-w-[280px] h-[340px] rounded-3xl bg-[linear-gradient(160deg,#306858,#4A8870,#D4B060)] relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(255,255,255,0.12)_0%,transparent_60%)]" />
-          <p className="absolute bottom-6 left-6 right-6 font-serif text-base text-white italic leading-relaxed opacity-85">
-            Am ales sa transform durerea in directia mea de viata."
+        <Reveal className="flex-shrink-0 w-full max-w-[280px] h-[340px] rounded-3xl relative overflow-hidden">
+          <img src="/images/dina-reading.png" alt="Dina Gheorghian" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          <p className="absolute bottom-6 left-6 right-6 font-serif text-base text-white italic leading-relaxed drop-shadow-md">
+            "Am ales sa transform durerea in directia mea de viata."
           </p>
         </Reveal>
 

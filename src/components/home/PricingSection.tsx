@@ -62,7 +62,7 @@ export default function PricingSection() {
               />
               {t.featured && (
                 <span
-                  className="inline-block text-[11px] font-semibold px-3.5 py-1 rounded-xl mb-3.5"
+                  className="inline-block text-[13px] font-semibold px-4 py-1.5 rounded-xl mb-3.5"
                   style={{
                     background: "linear-gradient(135deg, #F0D060, #E8B830)",
                     color: "#5B3A00",
@@ -72,32 +72,32 @@ export default function PricingSection() {
                 </span>
               )}
               <p
-                className="text-[13px] font-medium mb-1.5"
+                className="text-[16px] font-semibold mb-1.5"
                 style={{ color: t.featured ? "#C8E0D0" : "#306858" }}
               >
                 {t.name}
               </p>
               <p
-                className="text-[11.5px] mb-5"
+                className="text-[14px] mb-5"
                 style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#90B0A0" }}
               >
                 {t.details}
               </p>
               <p
-                className="font-serif text-4xl font-normal mb-1"
+                className="font-serif text-5xl font-normal mb-1"
                 style={{ color: t.featured ? "#fff" : "#264540" }}
               >
                 {t.price}
               </p>
               <p
-                className="text-sm"
+                className="text-base"
                 style={{ color: t.featured ? "rgba(255,255,255,0.5)" : "#88A898" }}
               >
                 lei
               </p>
               <Link
                 href="/contact"
-                className="inline-block mt-6 px-7 py-2.5 rounded-full text-[13px] font-medium transition-all hover:-translate-y-0.5"
+                className="inline-block mt-6 px-8 py-3 rounded-full text-[15px] font-medium transition-all hover:-translate-y-0.5"
                 style={
                   t.featured
                     ? {

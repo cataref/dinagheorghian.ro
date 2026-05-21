@@ -23,7 +23,7 @@ export default function CTABanner({
         <h2 className="font-serif text-[clamp(28px,4vw,42px)] text-white font-normal mb-4 leading-tight">
           {title}
         </h2>
-        <p className="text-white/50 text-[16px] max-w-md mx-auto leading-relaxed mb-9 font-light">
+        <p className="text-white text-[16px] max-w-md mx-auto leading-relaxed mb-9 font-light">
           {subtitle}
         </p>
         <Link
