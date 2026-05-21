@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 
 export default function AboutTeaser() {
   return (
-    <section className="bg-gradient-to-b from-mint-bg to-white py-24 px-6 md:px-12">
+    <section className="bg-white py-24 px-6 md:px-12">
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-14 items-center">
         {/* Visual */}
         <Reveal className="flex-shrink-0 w-full max-w-[280px] h-[340px] rounded-3xl relative overflow-hidden">
