@@ -73,6 +73,18 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QC9S99WZQC" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QC9S99WZQC');
+            `,
+          }}
+        />
       </head>
       <body className="font-sans antialiased">
         <Navigation />
