@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dinagheorghian.ro"),
   title: {
     default: "Dina Gheorghian · Ghid Transformational",
     template: "%s | Dina Gheorghian",
@@ -20,6 +21,10 @@ export const metadata: Metadata = {
     "dezvoltare personala",
     "Dina Gheorghian",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Dina Gheorghian · Ghid Transformational",
     description:
