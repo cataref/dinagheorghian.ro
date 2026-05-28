@@ -35,24 +35,14 @@ export default function CarteaContent() {
       <section className="py-20 px-6 bg-gradient-to-b from-mint-bg to-white">
         <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-14 items-center">
           {/* Cover */}
-          <Reveal className="flex-shrink-0 w-[260px] h-[370px] rounded-2xl bg-[linear-gradient(160deg,#264540,#306858,#4A8870)] relative overflow-hidden shadow-[16px_16px_50px_rgba(38,69,64,0.3)]">
-            <div className="absolute inset-6 border border-white/20 rounded-lg flex flex-col justify-end p-6">
-              <p className="font-serif text-2xl text-white font-normal leading-snug mb-2">
-                De ce eu?
-              </p>
-              <p className="text-[12px] text-white/50 tracking-wide uppercase mb-1">
-                Povestea mea de doliu
-              </p>
-              <p className="text-[12px] text-white/50 tracking-wide uppercase">
-                Dina Gheorghian
-              </p>
-            </div>
+          <Reveal className="flex-shrink-0 w-[260px] rounded-2xl overflow-hidden shadow-[16px_16px_50px_rgba(38,69,64,0.3)]">
+            <img src="/images/book-cover.png" alt="De ce eu? - Dina Gheorghian" className="w-full h-auto" />
           </Reveal>
 
           {/* Description */}
           <Reveal delay={0.15} className="flex-1 text-center md:text-left">
             <p className="text-[16px] text-[#4A6858] leading-[1.9] mb-5 font-light">
-              De ce eu?" este o carte nascuta dintr-o experienta reala de
+              "De ce eu?" este o carte nascuta dintr-o experienta reala de
               pierdere si transformare profunda. Nu este o carte de dezvoltare
               personala clasica. Este o carte scrisa din suflet, pentru sufletul
               tau.

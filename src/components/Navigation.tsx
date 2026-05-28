@@ -174,15 +174,8 @@ export default function Navigation() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-50 bg-teal-deep/96 backdrop-blur-2xl flex flex-col items-center justify-center gap-5"
+            className="fixed inset-0 z-50 bg-teal-deep/96 backdrop-blur-2xl flex flex-col items-center justify-center gap-5 overflow-y-auto py-20"
           >
-            <button
-              onClick={() => setOpen(false)}
-              className="absolute top-5 right-6 text-white text-2xl"
-              aria-label="Inchide"
-            >
-              ✕
-            </button>
             {links.map((link, i) =>
               link.children ? (
                 <motion.div
