@@ -86,7 +86,7 @@ const team = [
   {
     name: "Dina Gheorghian",
     role: "Formator | Autor | Psihologie | Sesiuni 1:1 | Ghid Dezvoltare Emotionala si Spirituala",
-    photo: "/images/retreat/dina.jpg",
+    photo: "/images/retreat/dina-solo.jpg",
     bio: "Ma numesc Dina, sunt autoarea cartii \"De ce eu - povestea mea de doliu, ghid pentru sufletul tau\" si cred ca fiecare om are in el resursele necesare pentru o viata autentica si echilibrata. Misiunea mea este sa creez spatii sigure in care intoarcerea la sine devine posibila.\n\nParcursul meu imbina coaching-ul, studiul psihologiei si intelegerea profunda a emotiilor, vindecarii trecutului si transformarii interioare. Sunt si studenta la psihologie, pentru ca evolutia si cunoasterea nu se opresc niciodata.\n\nIn retreaturi lucrez cu emotiile ramase in trecut, meditatii ghidate, exercitii energetice si instrumente practice de constientizare, astfel incat fiecare femeie sa plece mai linistita, mai clara si mai aproape de ea insasi.",
     instagram: "https://www.instagram.com/dinagheorghian",
     facebook: "https://www.facebook.com/dina.gureugheorghian",
@@ -94,7 +94,7 @@ const team = [
   {
     name: "Denisse Adlah",
     role: "Coach dezvoltare personala | Ghid procese autocunoastere | Terapeut EFT | Studenta psihologie",
-    photo: "/images/retreat/andreea.jpg",
+    photo: "/images/retreat/denisse-solo.jpg",
     bio: "Ma numesc Denisse si cred ca fiecare om are o harta interioara unica, iar rolul meu este sa te ajut sa o intelegi mai clar.\n\nSunt coach autorizat in dezvoltare personala, astrolog si studenta la psihologie, cu formare in Terapia Focusata pe Emotii (EFT). Am ales acest mix pentru ca sunt interesata de felul in care gandim, simtim si ne schimbam cu adevarat.\n\nAstrologia imi arata tiparele mai profunde ale fiintei, coaching-ul ofera directie si instrumente de schimbare, iar EFT-ul lucreaza cu emotiile si corpul atunci cand mintea nu mai gaseste raspunsuri. Psihologia completeaza aceasta intelegere a omului in profunzime.\n\nIn acest retreat, creez un spatiu in care iti poti observa tiparele de relationare si reactie, nu pentru a le judeca, ci pentru a le intelege si transforma. Lucrez cu blandetea, claritate si respect pentru ritmul fiecarei femei.",
     instagram: "",
     facebook: "",
@@ -102,7 +102,7 @@ const team = [
   {
     name: "Andreea Preda",
     role: "Hipnoterapeut | Terapeut acreditat in Terapia prin Regresii in Vieti Anterioare | Life Coach | Trainer | Studenta psihologie - formare CBT",
-    photo: "/images/retreat/denisse.jpg",
+    photo: "/images/retreat/andreea-solo.jpg",
     bio: "Ma numesc Andreea si lucrez la intersectia dintre stiinta si suflet. Am pornit din propria experienta de a trai intre performanta exterioara si gol interior, ceea ce m-a dus spre o intelegere profunda a omului dincolo de roluri si aparente.\n\nSunt coach autorizat in leadership si dezvoltare personala, hipnoterapeut in Hipnoza Ericksonianna, terapeut prin regresii in vieti anterioare, studenta la psihologie si formata in terapia cognitiv-comportamentala.\n\nLucrez integrativ: terapia cognitiv-comportamentala aduce claritate si instrumente practice, hipnoza lucreaza cu subconstientul si tiparele vechi, iar regresiile exploreaza rani si blocaje profunde pentru a fi intelese si eliberate.\n\nIn acest retreat lucrez cu femei puternice, dar obosite interior, care simt ca s-au indepartat de ele insele. Creez un spatiu sigur, unde transformarea se simte prin liniste, claritate si reconectare autentica cu sine.",
     instagram: "",
     facebook: "",
