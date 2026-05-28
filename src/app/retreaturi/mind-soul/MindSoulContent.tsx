@@ -290,8 +290,8 @@ export default function MindSoulContent() {
                   <p className="font-serif text-xl italic leading-relaxed" style={{ color: "#1a1a1a" }}>Nu este o vacanta. Este o intoarcere la tine!</p>
                 </blockquote>
               </div>
-              <div className="w-full md:w-[45%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
-                <img src="/images/retreat/meditation-room.jpg" alt="Sala de meditatie" className="w-full h-auto" />
+              <div className="w-full md:w-[50%] flex-shrink-0 rounded-2xl overflow-hidden self-stretch" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/meditation-room.jpg" alt="Sala de meditatie" className="w-full h-full object-cover" />
               </div>
             </div>
           </Reveal>
@@ -320,7 +320,7 @@ export default function MindSoulContent() {
 
       {/* Interstitial: Sunset terrace */}
       <section className="w-full">
-        <img src="/images/retreat/sunset-terrace.jpg" alt="Terasa la apus" className="w-full h-[300px] md:h-[400px] object-cover" />
+        <img src="/images/retreat/sunset-terrace.jpg" alt="Terasa la apus" className="w-full h-[400px] md:h-[550px] object-cover object-center" />
       </section>
 
       {/* De ce nu sunt fericita — ZIGZAG: Dina left, text right */}
@@ -387,7 +387,7 @@ export default function MindSoulContent() {
 
       {/* Interstitial: Trio close-up */}
       <section className="w-full">
-        <img src="/images/retreat/trio-closeup.jpg" alt="Echipa Mind & Soul" className="w-full h-[250px] md:h-[350px] object-cover object-top" />
+        <img src="/images/retreat/trio-closeup.jpg" alt="Echipa Mind & Soul" className="w-full h-[400px] md:h-[550px] object-cover object-top" />
       </section>
 
       {/* Ce facem impreuna — ZIGZAG: text left, golden room right */}
@@ -406,8 +406,8 @@ export default function MindSoulContent() {
                   ))}
                 </div>
               </div>
-              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
-                <img src="/images/retreat/golden-room.jpg" alt="Sala de workshop" className="w-full h-auto" />
+              <div className="w-full md:w-[50%] flex-shrink-0 rounded-2xl overflow-hidden self-stretch" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/golden-room.jpg" alt="Sala de workshop" className="w-full h-full object-cover" />
               </div>
             </div>
           </Reveal>
@@ -469,8 +469,8 @@ export default function MindSoulContent() {
             {team.map((t, i) => (
               <Reveal key={t.name} delay={i * 0.1}>
                 <div className={`flex flex-col ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-10 items-center md:items-start`}>
-                  <div className="w-[220px] h-[280px] rounded-2xl overflow-hidden flex-shrink-0" style={{ border: "2px solid rgba(212,176,96,0.15)", boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
-                    <img src={t.photo} alt={t.name} className="w-full h-full object-cover object-top" />
+                  <div className="w-full md:w-[40%] rounded-2xl overflow-hidden flex-shrink-0" style={{ border: "2px solid rgba(212,176,96,0.15)", boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                    <img src={t.photo} alt={t.name} className="w-full h-auto object-cover object-top" />
                   </div>
                   <div className={`flex-1 text-center ${i % 2 === 0 ? "md:text-left" : "md:text-right"}`}>
                     <h3 className="font-serif text-[22px] font-semibold mb-1" style={{ color: "#1a1a1a" }}>{t.name}</h3>
@@ -509,8 +509,8 @@ export default function MindSoulContent() {
                   <p className="text-[16px] font-semibold" style={{ color: "#C0392B" }}>Bonus special: O sesiune 1:1 gratuita la alegere cu una dintre cele 3 facilitatoare, valabila pana pe 5 august 2026</p>
                 </div>
               </div>
-              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
-                <img src="/images/retreat/pool.jpg" alt="Piscina" className="w-full h-auto" />
+              <div className="w-full md:w-[50%] flex-shrink-0 rounded-2xl overflow-hidden self-stretch" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/pool.jpg" alt="Piscina" className="w-full h-full object-cover" />
               </div>
             </div>
           </Reveal>
