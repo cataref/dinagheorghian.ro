@@ -264,41 +264,46 @@ export default function MindSoulContent() {
         backgroundImage="/images/retreat/hero-banner.png"
       />
 
-      {/* What is this retreat */}
-      <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #EEF4EE 0%, #fff 100%)" }}>
-        <div className="max-w-[1000px] mx-auto">
+      {/* Ce este acest Retreat — ZIGZAG: text left, meditation room right */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1100px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-6" style={{ color: "#1a1a1a" }}>Ce este acest Retreat?</h2>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              MIND & SOUL este mai mult decat un retreat. Este o reintalnire cu tine si cu partea din tine pe care poate ai pus-o pe pauza intre responsabilitati, griji si asteptari.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Vindecarea incepe in momentul cand te auzi cu adevarat, dincolo de agitatie, roluri, masti si tot ce ai fost nevoita sa porti.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Traim intr-un ritm accelerat. Mintea se incarca, corpul oboseste, sufletul tace. Uneori simti ca doar supravietuiesti.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Acest retreat este spatiul in care incetinesti. Respiri din nou. Te auzi din nou. Te simti din nou.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
-              Atunci cand te intorci la tine, totul incepe sa se aseze. Am creat acest spatiu pentru tine - sa respiri, sa te auzi, sa afli cine esti.
-            </p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <blockquote className="border-l-[3px] pl-6 my-8" style={{ borderColor: "#D4B060" }}>
-              <p className="font-serif text-xl italic leading-relaxed" style={{ color: "#1a1a1a" }}>Nu este o vacanta. Este o intoarcere la tine!</p>
-            </blockquote>
+            <div className="flex flex-col md:flex-row gap-10 items-center">
+              <div className="flex-1">
+                <h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-6" style={{ color: "#1a1a1a" }}>Ce este acest Retreat?</h2>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  MIND & SOUL este mai mult decat un retreat. Este o reintalnire cu tine si cu partea din tine pe care poate ai pus-o pe pauza intre responsabilitati, griji si asteptari.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Vindecarea incepe in momentul cand te auzi cu adevarat, dincolo de agitatie, roluri, masti si tot ce ai fost nevoita sa porti.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Traim intr-un ritm accelerat. Mintea se incarca, corpul oboseste, sufletul tace. Uneori simti ca doar supravietuiesti.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Acest retreat este spatiul in care incetinesti. Respiri din nou. Te auzi din nou. Te simti din nou.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
+                  Atunci cand te intorci la tine, totul incepe sa se aseze. Am creat acest spatiu pentru tine - sa respiri, sa te auzi, sa afli cine esti.
+                </p>
+                <blockquote className="border-l-[3px] pl-6 my-8" style={{ borderColor: "#D4B060" }}>
+                  <p className="font-serif text-xl italic leading-relaxed" style={{ color: "#1a1a1a" }}>Nu este o vacanta. Este o intoarcere la tine!</p>
+                </blockquote>
+              </div>
+              <div className="w-full md:w-[45%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/meditation-room.jpg" alt="Sala de meditatie" className="w-full h-auto" />
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
 
-
       <StickyCtaBar />
 
-      {/* For you */}
-      <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
-        <div className="max-w-[900px] mx-auto">
+      {/* Este pentru tine daca — with forest background */}
+      <section className="py-20 px-6 relative overflow-hidden" style={{ background: "#EEF4EE" }}>
+        <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "url(/images/retreat/forest.jpg)", backgroundSize: "cover", backgroundPosition: "center" }} />
+        <div className="max-w-[900px] mx-auto relative z-10">
           <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#1a1a1a" }}>Este pentru tine daca:</h2></Reveal>
           <div className="space-y-3">
             {forYou.map((item, i) => (
@@ -310,34 +315,41 @@ export default function MindSoulContent() {
               </Reveal>
             ))}
           </div>
-
         </div>
       </section>
 
+      {/* Interstitial: Sunset terrace */}
+      <section className="w-full">
+        <img src="/images/retreat/sunset-terrace.jpg" alt="Terasa la apus" className="w-full h-[300px] md:h-[400px] object-cover" />
+      </section>
 
-      {/* Intro - De ce nu sunt fericita */}
+      {/* De ce nu sunt fericita — ZIGZAG: Dina left, text right */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-[1000px] mx-auto text-center">
+        <div className="max-w-[1100px] mx-auto">
           <Reveal>
-            <p className="font-serif text-2xl md:text-3xl italic mb-8" style={{ color: "#1a1a1a" }}>"De ce nu sunt fericita?"</p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci totul.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              In retreatul Mind & Soul ai un spatiu creat pentru femeia care a dat tot si a uitat de ea insasi. Aici te opresti din ritmul zilnic si incepi sa te intelegi cu adevarat. Te eliberezi de emotiile si blocajele din trecut care iti influenteaza prezentul, inveti sa iti observi mintea si tiparele si incepi sa creezi mai constient directia in care vrei sa mergi.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
-              Acest retreat a fost creat pentru tine, nu este doar o vacanta, ci un drum spre linistea si echilibrul tau - spre fericire!
-            </p>
+            <div className="flex flex-col md:flex-row gap-10 items-center">
+              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/dina-sitting.jpg" alt="Dina Gheorghian" className="w-full h-auto" />
+              </div>
+              <div className="flex-1">
+                <p className="font-serif text-2xl md:text-3xl italic mb-8" style={{ color: "#1a1a1a" }}>"De ce nu sunt fericita?"</p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci\u00a0totul.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  In retreatul Mind & Soul ai un spatiu creat pentru femeia care a dat tot si a uitat de ea insasi. Aici te opresti din ritmul zilnic si incepi sa te intelegi cu adevarat. Te eliberezi de emotiile si blocajele din trecut care iti influenteaza prezentul, inveti sa iti observi mintea si tiparele si incepi sa creezi mai constient directia in care vrei sa mergi.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
+                  Acest retreat a fost creat pentru tine, nu este doar o vacanta, ci un drum spre linistea si echilibrul tau - spre fericire!
+                </p>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
 
-
-
-
       {/* Outcomes */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ background: "#EEF4EE" }}>
         <div className="max-w-[1000px] mx-auto">
           <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-10 text-center" style={{ color: "#1a1a1a" }}>Cum vei pleca acasa?</h2></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -353,9 +365,8 @@ export default function MindSoulContent() {
         </div>
       </section>
 
-
       {/* Testimonials */}
-      <section className="py-20 px-6" style={{ background: "#EEF4EE" }}>
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
           <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-10 text-center" style={{ color: "#1a1a1a" }}>Testimoniale</h2></Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -374,72 +385,99 @@ export default function MindSoulContent() {
         </div>
       </section>
 
-      {/* Activities */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#1a1a1a" }}>Ce facem impreuna</h2></Reveal>
-          <div className="space-y-3">
-            {activities.map((a, i) => (
-              <Reveal key={i} delay={i * 0.05}>
-                <div className="flex items-start gap-3.5 p-4 rounded-xl" style={{ background: "linear-gradient(135deg, #E8F0E8, #EEF4EE)" }}>
-                  <span className="text-lg flex-shrink-0 mt-0.5" style={{ color: "#78C8A0" }}>{String(i + 1).padStart(2, "0")}</span>
-                  <p className="text-[16px] leading-relaxed" style={{ color: "#2a2a2a" }}>{a}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
+      {/* Interstitial: Trio close-up */}
+      <section className="w-full">
+        <img src="/images/retreat/trio-closeup.jpg" alt="Echipa Mind & Soul" className="w-full h-[250px] md:h-[350px] object-cover object-top" />
       </section>
 
-
-      {/* Hypnosis & Regression - FULL TEXT */}
-      <section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #fff 0%, #EEF4EE 100%)" }}>
-        <div className="max-w-[1000px] mx-auto">
+      {/* Ce facem impreuna — ZIGZAG: text left, golden room right */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1100px] mx-auto">
           <Reveal>
-            <h2 className="font-serif text-[clamp(26px,2.8vw,38px)] font-semibold leading-snug mb-6" style={{ color: "#1a1a1a" }}>Ce este Hipnoza Ericksoniana si Terapia prin regresii</h2>
-
-            <h3 className="font-serif text-[22px] font-semibold mb-4 mt-8" style={{ color: "#1a1a1a" }}>Hipnoza Ericksoniana</h3>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Probabil primul gand este: "O sa pierd controlul." Nu se intampla asta. Sau "Imi voi pierde controlul." Nu, nu adormi, nu "dispari", nu esti vulnerabila in fata nimanui. Esti pur si simplu mai conectata cu tine - mai putin zgomot, mai mult tu.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Hipnoza Ericksoniana nu iti ia controlul - ti-l da inapoi.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Ramai prezenta, constienta si in control in fiecare moment. Nu adormi, nu "dispari" si nimeni nu iti poate sugera ceva ce tu nu accepti. Este o stare naturala de relaxare, pe care o cunosti deja, ca atunci cand esti absorbita intr-o carte sau in ganduri, in care te conectezi mai profund cu tine. Aici, subconstientul devine accesibil si schimbarea se intampla la un nivel mai profund decat prin simpla discutie.
-            </p>
-
-            <h3 className="font-serif text-[22px] font-semibold mb-4 mt-8" style={{ color: "#1a1a1a" }}>Terapia prin Regresii in Vieti Anterioare (metodologie PLRA, acreditata international)</h3>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Nu este ezoterism! Este o metodologie structurata, cu protocoale clare, care merge la sursa reala a blocajelor, acolo unde terapia clasica nu ajunge intotdeauna. Nu trebuie sa crezi in reincarnare. Procesul poate fi trait ca o metafora terapeutica, o vizualizare sau o explorare a subconstientului, efectul de vindecare este acelasi.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-              Anxietatea fara explicatie, tiparul relational care se repeta, frica de care nu poti scapa oricat lucrezi rational, au adesea o radacina mai adanca decat tot ce iti amintesti constient.
-            </p>
-            <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
-              Vei pleca cu intelegerea clara a unui tipar eliberat, reconectata la corpul tau si la sensul tau de viata cu instrumente reale pe care le poti folosi mult timp dupa ce retreatul s-a incheiat.
-            </p>
+            <div className="flex flex-col md:flex-row gap-10 items-center">
+              <div className="flex-1">
+                <h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8" style={{ color: "#1a1a1a" }}>Ce facem impreuna</h2>
+                <div className="space-y-3">
+                  {activities.map((a, i) => (
+                    <div key={i} className="flex items-start gap-3.5 p-4 rounded-xl" style={{ background: "linear-gradient(135deg, #E8F0E8, #EEF4EE)" }}>
+                      <span className="text-lg flex-shrink-0 mt-0.5" style={{ color: "#78C8A0" }}>{String(i + 1).padStart(2, "0")}</span>
+                      <p className="text-[16px] leading-relaxed" style={{ color: "#2a2a2a" }}>{a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/golden-room.jpg" alt="Sala de workshop" className="w-full h-auto" />
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Team */}
+      {/* Hipnoza — ZIGZAG flipped: sauna left, text right */}
+      <section className="py-20 px-6" style={{ background: "#EEF4EE" }}>
+        <div className="max-w-[1100px] mx-auto">
+          <Reveal>
+            <div className="flex flex-col md:flex-row gap-10 items-center">
+              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/sauna.jpg" alt="SPA & Wellness" className="w-full h-auto" />
+              </div>
+              <div className="flex-1">
+                <h2 className="font-serif text-[clamp(26px,2.8vw,38px)] font-semibold leading-snug mb-6" style={{ color: "#1a1a1a" }}>Ce este Hipnoza Ericksoniana si Terapia prin regresii</h2>
+
+                <h3 className="font-serif text-[22px] font-semibold mb-4 mt-8" style={{ color: "#1a1a1a" }}>Hipnoza Ericksoniana</h3>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Probabil primul gand este: "O sa pierd controlul." Nu se intampla asta. Sau "Imi voi pierde controlul." Nu, nu adormi, nu "dispari", nu esti vulnerabila in fata nimanui. Esti pur si simplu mai conectata cu tine - mai putin zgomot, mai mult tu.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Hipnoza Ericksoniana nu iti ia controlul - ti-l da inapoi.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Ramai prezenta, constienta si in control in fiecare moment. Nu adormi, nu "dispari" si nimeni nu iti poate sugera ceva ce tu nu accepti. Este o stare naturala de relaxare, pe care o cunosti deja, ca atunci cand esti absorbita intr-o carte sau in ganduri, in care te conectezi mai profund cu tine. Aici, subconstientul devine accesibil si schimbarea se intampla la un nivel mai profund decat prin simpla discutie.
+                </p>
+
+                <h3 className="font-serif text-[22px] font-semibold mb-4 mt-8" style={{ color: "#1a1a1a" }}>Terapia prin Regresii in Vieti Anterioare (metodologie PLRA, acreditata international)</h3>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Nu este ezoterism! Este o metodologie structurata, cu protocoale clare, care merge la sursa reala a blocajelor, acolo unde terapia clasica nu ajunge intotdeauna. Nu trebuie sa crezi in reincarnare. Procesul poate fi trait ca o metafora terapeutica, o vizualizare sau o explorare a subconstientului, efectul de vindecare este acelasi.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
+                  Anxietatea fara explicatie, tiparul relational care se repeta, frica de care nu poti scapa oricat lucrezi rational, au adesea o radacina mai adanca decat tot ce iti amintesti constient.
+                </p>
+                <p className="text-[16px] leading-[1.9] font-light" style={{ color: "#2a2a2a" }}>
+                  Vei pleca cu intelegerea clara a unui tipar eliberat, reconectata la corpul tau si la sensul tau de viata cu instrumente reale pe care le poti folosi mult timp dupa ce retreatul s-a incheiat.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Team — redesigned with trio banner + alternating cards */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-12 text-center" style={{ color: "#1a1a1a" }}>Echipa noastra</h2></Reveal>
-          <div className="space-y-12">
+        <div className="max-w-[1100px] mx-auto">
+          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-10 text-center" style={{ color: "#1a1a1a" }}>Echipa noastra</h2></Reveal>
+
+          {/* Trio banner */}
+          <Reveal>
+            <div className="rounded-2xl overflow-hidden mb-14" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+              <img src="/images/retreat/trio-standing.jpg" alt="Echipa Mind & Soul" className="w-full h-[280px] md:h-[380px] object-cover object-top" />
+            </div>
+          </Reveal>
+
+          {/* Individual cards — alternating sides */}
+          <div className="space-y-16">
             {team.map((t, i) => (
               <Reveal key={t.name} delay={i * 0.1}>
-                <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
-                  <div className="w-[180px] h-[220px] rounded-2xl overflow-hidden flex-shrink-0" style={{ border: "2px solid rgba(212,176,96,0.2)", boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <div className={`flex flex-col ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-10 items-center md:items-start`}>
+                  <div className="w-[220px] h-[280px] rounded-2xl overflow-hidden flex-shrink-0" style={{ border: "2px solid rgba(212,176,96,0.15)", boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
                     <img src={t.photo} alt={t.name} className="w-full h-full object-cover object-top" />
                   </div>
-                  <div className="flex-1 text-center md:text-left">
+                  <div className={`flex-1 text-center ${i % 2 === 0 ? "md:text-left" : "md:text-right"}`}>
                     <h3 className="font-serif text-[22px] font-semibold mb-1" style={{ color: "#1a1a1a" }}>{t.name}</h3>
                     <p className="text-[15px] mb-4" style={{ color: "#D4B060" }}>{t.role}</p>
                     <p className="text-[17px] leading-[1.85] font-normal whitespace-pre-line" style={{ color: "#2a2a2a" }}>{t.bio}</p>
                     {(t.instagram || t.facebook) && (
-                      <div className="flex gap-3 mt-4 justify-center md:justify-start">
+                      <div className={`flex gap-3 mt-4 justify-center ${i % 2 === 0 ? "md:justify-start" : "md:justify-end"}`}>
                         {t.instagram && <a href={t.instagram} target="_blank" rel="noopener noreferrer" className="text-[14px] hover:underline" style={{ color: "#78A890" }}>Instagram</a>}
                         {t.facebook && <a href={t.facebook} target="_blank" rel="noopener noreferrer" className="text-[14px] hover:underline" style={{ color: "#78A890" }}>Facebook</a>}
                       </div>
@@ -452,24 +490,28 @@ export default function MindSoulContent() {
         </div>
       </section>
 
-
-      {/* Included */}
+      {/* Ce este inclus — ZIGZAG: checklist left, pool right */}
       <section className="py-20 px-6" style={{ background: "#EEF4EE" }}>
-        <div className="max-w-[1000px] mx-auto">
-          <Reveal><h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#1a1a1a" }}>Ce este inclus</h2></Reveal>
-          <div className="space-y-2.5">
-            {included.map((item, i) => (
-              <Reveal key={i} delay={i * 0.04}>
-                <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white">
-                  <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#78C8A0" }} viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
-                  <p className="text-[16px]" style={{ color: "#2a2a2a" }}>{item}</p>
+        <div className="max-w-[1100px] mx-auto">
+          <Reveal>
+            <h2 className="font-serif text-[clamp(28px,3.2vw,42px)] font-semibold leading-snug mb-8 text-center" style={{ color: "#1a1a1a" }}>Ce este inclus</h2>
+            <div className="flex flex-col md:flex-row gap-10 items-center">
+              <div className="flex-1">
+                <div className="space-y-2.5">
+                  {included.map((item, i) => (
+                    <div key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-white">
+                      <svg className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ fill: "#78C8A0" }} viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                      <p className="text-[16px]" style={{ color: "#2a2a2a" }}>{item}</p>
+                    </div>
+                  ))}
                 </div>
-              </Reveal>
-            ))}
-          </div>
-          <Reveal delay={0.5}>
-            <div className="mt-6 p-5 rounded-xl bg-white text-center" style={{ border: "2px solid rgba(212,176,96,0.2)" }}>
-              <p className="text-[16px] font-semibold" style={{ color: "#C0392B" }}>Bonus special: O sesiune 1:1 gratuita la alegere cu una dintre cele 3 facilitatoare, valabila pana pe 5 august 2026</p>
+                <div className="mt-6 p-5 rounded-xl bg-white text-center" style={{ border: "2px solid rgba(212,176,96,0.2)" }}>
+                  <p className="text-[16px] font-semibold" style={{ color: "#C0392B" }}>Bonus special: O sesiune 1:1 gratuita la alegere cu una dintre cele 3 facilitatoare, valabila pana pe 5 august 2026</p>
+                </div>
+              </div>
+              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                <img src="/images/retreat/pool.jpg" alt="Piscina" className="w-full h-auto" />
+              </div>
             </div>
           </Reveal>
         </div>
