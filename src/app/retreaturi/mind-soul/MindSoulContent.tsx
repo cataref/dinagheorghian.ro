@@ -460,7 +460,7 @@ export default function MindSoulContent() {
           {/* Trio banner */}
           <Reveal>
             <div className="rounded-2xl overflow-hidden mb-14" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
-              <img src="/images/retreat/trio-standing.jpg" alt="Echipa Mind & Soul" className="w-full h-[280px] md:h-[380px] object-cover object-top" />
+              <img src="/images/retreat/team-group.jpg" alt="Echipa Mind & Soul" className="w-full h-[280px] md:h-[380px] object-cover object-top" />
             </div>
           </Reveal>
 
