@@ -93,9 +93,9 @@ const team = [
   },
   {
     name: "Denisse Adlah",
-    role: "Coach dezvoltare personala | Ghid procese autocunoastere | Terapeut EFT | Studenta psihologie",
+    role: "Consilier multidisciplinar in dezvoltare personala | EFT | Psihologie & autocunoastere",
     photo: "/images/retreat/denisse-solo.jpg",
-    bio: "Ma numesc Denisse si cred ca fiecare om are o harta interioara unica, iar rolul meu este sa te ajut sa o intelegi mai clar.\n\nSunt coach autorizat in dezvoltare personala, astrolog si studenta la psihologie, cu formare in Terapia Focusata pe Emotii (EFT). Am ales acest mix pentru ca sunt interesata de felul in care gandim, simtim si ne schimbam cu adevarat.\n\nAstrologia imi arata tiparele mai profunde ale fiintei, coaching-ul ofera directie si instrumente de schimbare, iar EFT-ul lucreaza cu emotiile si corpul atunci cand mintea nu mai gaseste raspunsuri. Psihologia completeaza aceasta intelegere a omului in profunzime.\n\nIn acest retreat, creez un spatiu in care iti poti observa tiparele de relationare si reactie, nu pentru a le judeca, ci pentru a le intelege si transforma. Lucrez cu blandetea, claritate si respect pentru ritmul fiecarei femei.",
+    bio: "Ma numesc Denisse si cred ca fiecare om are o harta interioara unica, iar rolul meu este sa te ajut sa o intelegi mai clar.\n\nSunt consilier multidisciplinar in dezvoltare personala, astrolog profesionist si studenta la psihologie, cu formare in Terapia Focusata pe Emotii (EFT). Am ales acest mix pentru ca sunt interesata de felul in care gandim, simtim si ne schimbam cu adevarat.\n\nAstrologia imi arata tiparele mai profunde ale fiintei, consilierea ofera directie si instrumente de schimbare, iar EFT-ul lucreaza cu emotiile si corpul atunci cand mintea nu mai gaseste raspunsuri. Psihologia completeaza aceasta intelegere a omului in profunzime.\n\nIn acest retreat, creez un spatiu in care iti poti observa tiparele de relationare si reactie, nu pentru a le judeca, ci pentru a le intelege si transforma. Lucrez cu blandetze, claritate si respect pentru ritmul fiecarei femei.",
     instagram: "",
     facebook: "",
   },
@@ -318,23 +318,18 @@ export default function MindSoulContent() {
         </div>
       </section>
 
-      {/* Interstitial: Sunset terrace */}
-      <section className="w-full">
-        <img src="/images/retreat/sunset-terrace.jpg" alt="Terasa la apus" className="w-full h-[400px] md:h-[550px] object-cover object-center" />
-      </section>
-
       {/* De ce nu sunt fericita — ZIGZAG: Dina left, text right */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-[1100px] mx-auto">
           <Reveal>
             <div className="flex flex-col md:flex-row gap-10 items-center">
-              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
-                <img src="/images/retreat/dina-sitting.jpg" alt="Dina Gheorghian" className="w-full h-auto" />
+              <div className="w-full md:w-[40%] flex-shrink-0 rounded-2xl overflow-hidden" style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.1)", maxHeight: "450px" }}>
+                <img src="/images/retreat/dina-sitting.jpg" alt="Dina Gheorghian" className="w-full h-full object-cover object-top" />
               </div>
               <div className="flex-1">
                 <p className="font-serif text-2xl md:text-3xl italic mb-8" style={{ color: "#1a1a1a" }}>"De ce nu sunt fericita?"</p>
                 <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
-                  Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci\u00a0totul.
+                  Poate nu stii exact ce te face sa te simti asa. Poate stii, dar nu reusesti sa schimbi ceva. Sau poate esti pur si simplu obosita sa mai duci totul.
                 </p>
                 <p className="text-[16px] leading-[1.9] font-light mb-5" style={{ color: "#2a2a2a" }}>
                   In retreatul Mind & Soul ai un spatiu creat pentru femeia care a dat tot si a uitat de ea insasi. Aici te opresti din ritmul zilnic si incepi sa te intelegi cu adevarat. Te eliberezi de emotiile si blocajele din trecut care iti influenteaza prezentul, inveti sa iti observi mintea si tiparele si incepi sa creezi mai constient directia in care vrei sa mergi.
@@ -387,7 +382,7 @@ export default function MindSoulContent() {
 
       {/* Interstitial: Trio close-up */}
       <section className="w-full">
-        <img src="/images/retreat/trio-closeup.jpg" alt="Echipa Mind & Soul" className="w-full h-[400px] md:h-[550px] object-cover object-top" />
+        <img src="/images/retreat/trio-closeup.jpg" alt="Echipa Mind & Soul" className="w-full h-auto" />
       </section>
 
       {/* Ce facem impreuna — ZIGZAG: text left, golden room right */}
@@ -468,9 +463,9 @@ export default function MindSoulContent() {
           <div className="space-y-16">
             {team.map((t, i) => (
               <Reveal key={t.name} delay={i * 0.1}>
-                <div className={`flex flex-col ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-10 items-center md:items-start`}>
-                  <div className="w-full md:w-[40%] rounded-2xl overflow-hidden flex-shrink-0" style={{ border: "2px solid rgba(212,176,96,0.15)", boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
-                    <img src={t.photo} alt={t.name} className="w-full h-auto object-cover object-top" />
+                <div className={`flex flex-col ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-10 items-center md:items-center`}>
+                  <div className="w-full md:w-[35%] h-[400px] md:h-[450px] rounded-2xl overflow-hidden flex-shrink-0" style={{ border: "2px solid rgba(212,176,96,0.15)", boxShadow: "0 8px 30px rgba(0,0,0,0.1)" }}>
+                    <img src={t.photo} alt={t.name} className="w-full h-full object-cover object-top" />
                   </div>
                   <div className={`flex-1 text-center ${i % 2 === 0 ? "md:text-left" : "md:text-right"}`}>
                     <h3 className="font-serif text-[22px] font-semibold mb-1" style={{ color: "#1a1a1a" }}>{t.name}</h3>
