@@ -86,7 +86,11 @@
     var a = e.target.closest && e.target.closest("a[href]");
     if (!a) return;
     var href = a.getAttribute("href");
-    if (href.indexOf("wa.me/") > -1) track("Contact", { content_name: "WhatsApp", source: location.pathname });
+    if (href.indexOf("wa.me/") > -1) {
+      // "Lead" with content_name "WhatsApp" is what the old site sent, so existing ad optimisation keeps working.
+      track("Lead", { content_name: "WhatsApp", source: location.pathname });
+      track("Contact", { content_name: "WhatsApp", source: location.pathname });
+    }
     else if (href.indexOf("buy.stripe.com") > -1) track("InitiateCheckout", { content_name: "De ce eu?", value: 75, currency: "RON" });
   });
 
